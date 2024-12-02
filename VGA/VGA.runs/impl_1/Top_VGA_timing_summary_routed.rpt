@@ -1,0 +1,1708 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Dec  2 11:44:05 2024
+| Host         : VD023002 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file Top_VGA_timing_summary_routed.rpt -pb Top_VGA_timing_summary_routed.pb -rpx Top_VGA_timing_summary_routed.rpx -warn_on_violation
+| Design       : Top_VGA
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (344)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (30)
+5. checking no_input_delay (5)
+6. checking no_output_delay (4)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (344)
+--------------------------
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/ContCols/counter_reg_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/ContCols/counter_reg_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/ContCols/counter_reg_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/ContCols/counter_reg_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/ContCols/counter_reg_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/Contfils/counter_reg_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/Contfils/counter_reg_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/Contfils/counter_reg_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/Contfils/counter_reg_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CELDAPACMAN/Contfils/counter_reg_reg[4]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[0]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[10]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[11]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[12]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[13]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[14]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[15]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[16]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[17]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[18]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[19]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[1]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[20]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[21]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[2]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[3]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[4]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[5]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[6]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[7]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[8]/Q (HIGH)
+
+ There are 12 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Cont100ms/counter_reg_reg[9]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/ContCols/counter_reg_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/ContCols/counter_reg_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/ContCols/counter_reg_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/ContCols/counter_reg_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/ContCols/counter_reg_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Contfils/counter_reg_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Contfils/counter_reg_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Contfils/counter_reg_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Contfils/counter_reg_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: CeldaGHOST/Contfils/counter_reg_reg[4]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: PINTAc/PSJ_reg[0]/Q (HIGH)
+
+ There are 4 register/latch pins with no clock driven by root clock pin: PINTAc/PSJ_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[0]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[1]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[2]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[3]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[5]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[6]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[7]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/ContCols/counter_reg_reg[9]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/Contfils/counter_reg_reg[4]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/Contfils/counter_reg_reg[5]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/Contfils/counter_reg_reg[6]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/Contfils/counter_reg_reg[7]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/Contfils/counter_reg_reg[8]/Q (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SYNCVGA/Contfils/counter_reg_reg[9]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (30)
+-------------------------------------------------
+ There are 30 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (5)
+------------------------------
+ There are 5 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (4)
+-------------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     30.184        0.000                      0                  232        0.210        0.000                      0                  232        2.000        0.000                       0                   184  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)         Period(ns)      Frequency(MHz)
+-----        ------------         ----------      --------------
+sys_clk_pin  {0.000 4.000}        8.000           125.000         
+  clkfbout   {0.000 4.000}        8.000           125.000         
+  pllclk0    {0.000 4.000}        8.000           125.000         
+  pllclk1    {0.000 20.000}       40.000          25.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin                                                                                                                                                     2.000        0.000                       0                     1  
+  clkfbout                                                                                                                                                      6.751        0.000                       0                     2  
+  pllclk0                                                                                                                                                       5.845        0.000                       0                    10  
+  pllclk1          30.184        0.000                      0                  232        0.210        0.000                      0                  232       19.500        0.000                       0                   171  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        2.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin           Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     PLLE2_ADV/CLKIN1  n/a            1.249         8.000       6.751      PLLE2_ADV_X0Y1  PLL/clock/CLKIN1
+Max Period        n/a     PLLE2_ADV/CLKIN1  n/a            52.633        8.000       44.633     PLLE2_ADV_X0Y1  PLL/clock/CLKIN1
+Low Pulse Width   Slow    PLLE2_ADV/CLKIN1  n/a            2.000         4.000       2.000      PLLE2_ADV_X0Y1  PLL/clock/CLKIN1
+Low Pulse Width   Fast    PLLE2_ADV/CLKIN1  n/a            2.000         4.000       2.000      PLLE2_ADV_X0Y1  PLL/clock/CLKIN1
+High Pulse Width  Fast    PLLE2_ADV/CLKIN1  n/a            2.000         4.000       2.000      PLLE2_ADV_X0Y1  PLL/clock/CLKIN1
+High Pulse Width  Slow    PLLE2_ADV/CLKIN1  n/a            2.000         4.000       2.000      PLLE2_ADV_X0Y1  PLL/clock/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout
+  To Clock:  clkfbout
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        6.751ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { PLL/clock/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period  n/a     PLLE2_ADV/CLKFBOUT  n/a            1.249         8.000       6.751      PLLE2_ADV_X0Y1  PLL/clock/CLKFBOUT
+Min Period  n/a     PLLE2_ADV/CLKFBIN   n/a            1.249         8.000       6.751      PLLE2_ADV_X0Y1  PLL/clock/CLKFBIN
+Max Period  n/a     PLLE2_ADV/CLKFBIN   n/a            52.633        8.000       44.633     PLLE2_ADV_X0Y1  PLL/clock/CLKFBIN
+Max Period  n/a     PLLE2_ADV/CLKFBOUT  n/a            160.000       8.000       152.000    PLLE2_ADV_X0Y1  PLL/clock/CLKFBOUT
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  pllclk0
+  To Clock:  pllclk0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        5.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         pllclk0
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { PLL/clock/CLKOUT0 }
+
+Check Type  Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period  n/a     BUFG/I             n/a            2.155         8.000       5.845      BUFGCTRL_X0Y17  PLL/clk0buf/I
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y97    HDMI/ser_g/fors7.slave/CLK
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y96    HDMI/ser_r/fors7.master/CLK
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y95    HDMI/ser_r/fors7.slave/CLK
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y92    HDMI/ser_b/fors7.master/CLK
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y91    HDMI/ser_b/fors7.slave/CLK
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y74    HDMI/ser_c/fors7.master/CLK
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y73    HDMI/ser_c/fors7.slave/CLK
+Min Period  n/a     OSERDESE2/CLK      n/a            1.667         8.000       6.333      OLOGIC_X0Y98    HDMI/ser_g/fors7.master/CLK
+Min Period  n/a     PLLE2_ADV/CLKOUT0  n/a            1.249         8.000       6.751      PLLE2_ADV_X0Y1  PLL/clock/CLKOUT0
+Max Period  n/a     PLLE2_ADV/CLKOUT0  n/a            160.000       8.000       152.000    PLLE2_ADV_X0Y1  PLL/clock/CLKOUT0
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  pllclk1
+  To Clock:  pllclk1
+
+Setup :            0  Failing Endpoints,  Worst Slack       30.184ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.210ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       19.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             30.184ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tb/disparity_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        9.478ns  (logic 3.227ns (34.048%)  route 6.251ns (65.952%))
+  Logic Levels:           6  (LUT4=1 LUT6=5)
+  Clock Path Skew:        -0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.931ns = ( 45.931 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 r  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 f  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 f  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.657    12.298    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I3_O)        0.124    12.422 r  MemoriaPSJblue/disparity[3]_i_9/O
+                         net (fo=1, routed)           0.338    12.760    MemoriaPSJblue/disparity[3]_i_9_n_0
+    SLICE_X37Y78         LUT6 (Prop_lut6_I1_O)        0.124    12.884 r  MemoriaPSJblue/disparity[3]_i_7/O
+                         net (fo=1, routed)           0.808    13.692    cMemoriaPSJred/dout_reg[8]_2
+    SLICE_X40Y78         LUT6 (Prop_lut6_I4_O)        0.124    13.816 r  cMemoriaPSJred/disparity[3]_i_4/O
+                         net (fo=5, routed)           1.414    15.230    HDMI/tb/disparity_reg[1]_0
+    SLICE_X42Y90         LUT4 (Prop_lut4_I1_O)        0.153    15.383 r  HDMI/tb/disparity[1]_i_1/O
+                         net (fo=1, routed)           0.524    15.907    HDMI/tb/disparity[1]_i_1_n_0
+    SLICE_X42Y90         FDRE                                         r  HDMI/tb/disparity_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.561    45.931    HDMI/tb/clk1_o
+    SLICE_X42Y90         FDRE                                         r  HDMI/tb/disparity_reg[1]/C
+                         clock pessimism              0.485    46.416    
+                         clock uncertainty           -0.088    46.328    
+    SLICE_X42Y90         FDRE (Setup_fdre_C_D)       -0.237    46.091    HDMI/tb/disparity_reg[1]
+  -------------------------------------------------------------------
+                         required time                         46.091    
+                         arrival time                         -15.907    
+  -------------------------------------------------------------------
+                         slack                                 30.184    
+
+Slack (MET) :             30.514ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tr/dout_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        9.418ns  (logic 3.198ns (33.957%)  route 6.220ns (66.043%))
+  Logic Levels:           6  (LUT3=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 r  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 f  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 f  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 r  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.667    13.309    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I5_O)        0.124    13.433 r  RTCPSJ/dout[8]_i_4/O
+                         net (fo=1, routed)           0.306    13.739    cMemoriaPSJred/dout_reg[8]_5
+    SLICE_X40Y78         LUT6 (Prop_lut6_I2_O)        0.124    13.863 r  cMemoriaPSJred/dout[8]_i_1__2/O
+                         net (fo=5, routed)           1.860    15.723    SYNCVGA/ContCols/dout_reg[9]_4
+    SLICE_X43Y96         LUT3 (Prop_lut3_I2_O)        0.124    15.847 r  SYNCVGA/ContCols/dout[9]_i_1__1/O
+                         net (fo=1, routed)           0.000    15.847    HDMI/tr/D[1]
+    SLICE_X43Y96         FDRE                                         r  HDMI/tr/dout_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tr/clk1_o
+    SLICE_X43Y96         FDRE                                         r  HDMI/tr/dout_reg[9]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X43Y96         FDRE (Setup_fdre_C_D)        0.031    46.361    HDMI/tr/dout_reg[9]
+  -------------------------------------------------------------------
+                         required time                         46.361    
+                         arrival time                         -15.847    
+  -------------------------------------------------------------------
+                         slack                                 30.514    
+
+Slack (MET) :             30.752ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tr/disparity_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        9.228ns  (logic 3.198ns (34.656%)  route 6.030ns (65.344%))
+  Logic Levels:           6  (LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 r  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 f  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 f  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 r  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.667    13.309    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I5_O)        0.124    13.433 r  RTCPSJ/dout[8]_i_4/O
+                         net (fo=1, routed)           0.306    13.739    cMemoriaPSJred/dout_reg[8]_5
+    SLICE_X40Y78         LUT6 (Prop_lut6_I2_O)        0.124    13.863 r  cMemoriaPSJred/dout[8]_i_1__2/O
+                         net (fo=5, routed)           1.670    15.533    HDMI/tr/D[0]
+    SLICE_X42Y96         LUT5 (Prop_lut5_I1_O)        0.124    15.657 r  HDMI/tr/disparity[2]_i_1__0/O
+                         net (fo=1, routed)           0.000    15.657    HDMI/tr/disparity[2]_i_1__0_n_0
+    SLICE_X42Y96         FDRE                                         r  HDMI/tr/disparity_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tr/clk1_o
+    SLICE_X42Y96         FDRE                                         r  HDMI/tr/disparity_reg[2]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X42Y96         FDRE (Setup_fdre_C_D)        0.079    46.409    HDMI/tr/disparity_reg[2]
+  -------------------------------------------------------------------
+                         required time                         46.409    
+                         arrival time                         -15.657    
+  -------------------------------------------------------------------
+                         slack                                 30.752    
+
+Slack (MET) :             30.766ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tr/disparity_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        9.253ns  (logic 3.223ns (34.833%)  route 6.030ns (65.167%))
+  Logic Levels:           6  (LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 f  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 r  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 r  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 f  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.667    13.309    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I5_O)        0.124    13.433 f  RTCPSJ/dout[8]_i_4/O
+                         net (fo=1, routed)           0.306    13.739    cMemoriaPSJred/dout_reg[8]_5
+    SLICE_X40Y78         LUT6 (Prop_lut6_I2_O)        0.124    13.863 f  cMemoriaPSJred/dout[8]_i_1__2/O
+                         net (fo=5, routed)           1.670    15.533    HDMI/tr/D[0]
+    SLICE_X42Y96         LUT5 (Prop_lut5_I3_O)        0.149    15.682 r  HDMI/tr/disparity[3]_i_1/O
+                         net (fo=1, routed)           0.000    15.682    HDMI/tr/disparity[3]_i_1_n_0
+    SLICE_X42Y96         FDRE                                         r  HDMI/tr/disparity_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tr/clk1_o
+    SLICE_X42Y96         FDRE                                         r  HDMI/tr/disparity_reg[3]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X42Y96         FDRE (Setup_fdre_C_D)        0.118    46.448    HDMI/tr/disparity_reg[3]
+  -------------------------------------------------------------------
+                         required time                         46.448    
+                         arrival time                         -15.682    
+  -------------------------------------------------------------------
+                         slack                                 30.766    
+
+Slack (MET) :             30.779ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tr/disparity_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        9.240ns  (logic 3.227ns (34.925%)  route 6.013ns (65.075%))
+  Logic Levels:           6  (LUT4=1 LUT6=5)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 r  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 f  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 f  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 r  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.667    13.309    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I5_O)        0.124    13.433 r  RTCPSJ/dout[8]_i_4/O
+                         net (fo=1, routed)           0.306    13.739    cMemoriaPSJred/dout_reg[8]_5
+    SLICE_X40Y78         LUT6 (Prop_lut6_I2_O)        0.124    13.863 r  cMemoriaPSJred/dout[8]_i_1__2/O
+                         net (fo=5, routed)           1.653    15.516    HDMI/tr/D[0]
+    SLICE_X42Y96         LUT4 (Prop_lut4_I1_O)        0.153    15.669 r  HDMI/tr/disparity[1]_i_1__0/O
+                         net (fo=1, routed)           0.000    15.669    HDMI/tr/disparity[1]_i_1__0_n_0
+    SLICE_X42Y96         FDRE                                         r  HDMI/tr/disparity_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tr/clk1_o
+    SLICE_X42Y96         FDRE                                         r  HDMI/tr/disparity_reg[1]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X42Y96         FDRE (Setup_fdre_C_D)        0.118    46.448    HDMI/tr/disparity_reg[1]
+  -------------------------------------------------------------------
+                         required time                         46.448    
+                         arrival time                         -15.669    
+  -------------------------------------------------------------------
+                         slack                                 30.779    
+
+Slack (MET) :             31.064ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tg/dout_reg[9]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        8.869ns  (logic 3.074ns (34.660%)  route 5.795ns (65.340%))
+  Logic Levels:           5  (LUT3=1 LUT6=4)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 r  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 f  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 f  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 r  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.986    13.627    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I1_O)        0.124    13.751 r  RTCPSJ/dout[8]_i_1__1/O
+                         net (fo=5, routed)           1.423    15.174    RTCPSJ/counter_reg_reg[8]_0
+    SLICE_X43Y96         LUT3 (Prop_lut3_I0_O)        0.124    15.298 r  RTCPSJ/dout[9]_i_1__2/O
+                         net (fo=1, routed)           0.000    15.298    HDMI/tg/D[1]
+    SLICE_X43Y96         FDRE                                         r  HDMI/tg/dout_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tg/clk1_o
+    SLICE_X43Y96         FDRE                                         r  HDMI/tg/dout_reg[9]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X43Y96         FDRE (Setup_fdre_C_D)        0.032    46.362    HDMI/tg/dout_reg[9]
+  -------------------------------------------------------------------
+                         required time                         46.362    
+                         arrival time                         -15.298    
+  -------------------------------------------------------------------
+                         slack                                 31.064    
+
+Slack (MET) :             31.073ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tb/dout_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        8.944ns  (logic 3.227ns (36.080%)  route 5.717ns (63.920%))
+  Logic Levels:           6  (LUT3=1 LUT6=5)
+  Clock Path Skew:        -0.012ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.932ns = ( 45.932 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 f  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 r  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 r  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.657    12.298    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I3_O)        0.124    12.422 f  MemoriaPSJblue/disparity[3]_i_9/O
+                         net (fo=1, routed)           0.338    12.760    MemoriaPSJblue/disparity[3]_i_9_n_0
+    SLICE_X37Y78         LUT6 (Prop_lut6_I1_O)        0.124    12.884 f  MemoriaPSJblue/disparity[3]_i_7/O
+                         net (fo=1, routed)           0.808    13.692    cMemoriaPSJred/dout_reg[8]_2
+    SLICE_X40Y78         LUT6 (Prop_lut6_I4_O)        0.124    13.816 f  cMemoriaPSJred/disparity[3]_i_4/O
+                         net (fo=5, routed)           1.404    15.220    SYNCVGA/ContCols/dout_reg[8]
+    SLICE_X42Y91         LUT3 (Prop_lut3_I0_O)        0.153    15.373 r  SYNCVGA/ContCols/dout[8]_i_1/O
+                         net (fo=1, routed)           0.000    15.373    HDMI/tb/D[2]
+    SLICE_X42Y91         FDRE                                         r  HDMI/tb/dout_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.562    45.932    HDMI/tb/clk1_o
+    SLICE_X42Y91         FDRE                                         r  HDMI/tb/dout_reg[8]/C
+                         clock pessimism              0.485    46.417    
+                         clock uncertainty           -0.088    46.329    
+    SLICE_X42Y91         FDRE (Setup_fdre_C_D)        0.118    46.447    HDMI/tb/dout_reg[8]
+  -------------------------------------------------------------------
+                         required time                         46.447    
+                         arrival time                         -15.373    
+  -------------------------------------------------------------------
+                         slack                                 31.073    
+
+Slack (MET) :             31.121ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tg/disparity_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        8.861ns  (logic 3.074ns (34.692%)  route 5.787ns (65.308%))
+  Logic Levels:           5  (LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 r  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 f  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 f  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 r  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.986    13.627    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I1_O)        0.124    13.751 r  RTCPSJ/dout[8]_i_1__1/O
+                         net (fo=5, routed)           1.415    15.166    HDMI/tg/D[0]
+    SLICE_X42Y96         LUT5 (Prop_lut5_I2_O)        0.124    15.290 r  HDMI/tg/disparity[2]_i_1__1/O
+                         net (fo=1, routed)           0.000    15.290    HDMI/tg/disparity[2]_i_1__1_n_0
+    SLICE_X42Y96         FDRE                                         r  HDMI/tg/disparity_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tg/clk1_o
+    SLICE_X42Y96         FDRE                                         r  HDMI/tg/disparity_reg[2]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X42Y96         FDRE (Setup_fdre_C_D)        0.081    46.411    HDMI/tg/disparity_reg[2]
+  -------------------------------------------------------------------
+                         required time                         46.411    
+                         arrival time                         -15.290    
+  -------------------------------------------------------------------
+                         slack                                 31.121    
+
+Slack (MET) :             31.129ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tg/disparity_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        8.890ns  (logic 3.100ns (34.871%)  route 5.790ns (65.129%))
+  Logic Levels:           5  (LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 r  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 f  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 f  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 r  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.986    13.627    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I1_O)        0.124    13.751 r  RTCPSJ/dout[8]_i_1__1/O
+                         net (fo=5, routed)           1.418    15.169    HDMI/tg/D[0]
+    SLICE_X42Y96         LUT4 (Prop_lut4_I3_O)        0.150    15.319 r  HDMI/tg/disparity[1]_i_1__1/O
+                         net (fo=1, routed)           0.000    15.319    HDMI/tg/disparity[1]_i_1__1_n_0
+    SLICE_X42Y96         FDRE                                         r  HDMI/tg/disparity_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tg/clk1_o
+    SLICE_X42Y96         FDRE                                         r  HDMI/tg/disparity_reg[1]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X42Y96         FDRE (Setup_fdre_C_D)        0.118    46.448    HDMI/tg/disparity_reg[1]
+  -------------------------------------------------------------------
+                         required time                         46.448    
+                         arrival time                         -15.319    
+  -------------------------------------------------------------------
+                         slack                                 31.129    
+
+Slack (MET) :             31.132ns  (required time - arrival time)
+  Source:                 MemoriaPSJblue/dout_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tg/disparity_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (pllclk1 rise@40.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        8.887ns  (logic 3.100ns (34.883%)  route 5.787ns (65.117%))
+  Logic Levels:           5  (LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.933ns = ( 45.933 - 40.000 ) 
+    Source Clock Delay      (SCD):    6.429ns
+    Clock Pessimism Removal (CPR):    0.485ns
+  Clock Uncertainty:      0.088ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.161ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.492     1.492 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.306     2.798    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.088     2.886 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.754     4.640    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.741 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.688     6.429    MemoriaPSJblue/clk1_o
+    RAMB18_X2Y30         RAMB18E1                                     r  MemoriaPSJblue/dout_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y30         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[0])
+                                                      2.454     8.883 f  MemoriaPSJblue/dout_reg/DOADO[0]
+                         net (fo=4, routed)           1.421    10.305    MemoriaPSJblue/sdinB[0]
+    SLICE_X38Y76         LUT6 (Prop_lut6_I1_O)        0.124    10.429 r  MemoriaPSJblue/dout[8]_i_16/O
+                         net (fo=1, routed)           1.089    11.518    MemoriaPSJblue/dout[8]_i_16_n_0
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    11.642 r  MemoriaPSJblue/dout[8]_i_5/O
+                         net (fo=5, routed)           0.876    12.518    MemoriaPSJblue/counter_reg_reg[3]_1
+    SLICE_X36Y78         LUT6 (Prop_lut6_I0_O)        0.124    12.642 f  MemoriaPSJblue/dout[8]_i_3/O
+                         net (fo=2, routed)           0.986    13.627    RTCPSJ/dout_reg[8]_1
+    SLICE_X38Y78         LUT6 (Prop_lut6_I1_O)        0.124    13.751 f  RTCPSJ/dout[8]_i_1__1/O
+                         net (fo=5, routed)           1.415    15.166    HDMI/tg/D[0]
+    SLICE_X42Y96         LUT5 (Prop_lut5_I3_O)        0.150    15.316 r  HDMI/tg/disparity[3]_i_1__0/O
+                         net (fo=1, routed)           0.000    15.316    HDMI/tg/disparity[3]_i_1__0_n_0
+    SLICE_X42Y96         FDRE                                         r  HDMI/tg/disparity_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)   40.000    40.000 r  
+    K17                                               0.000    40.000 r  clk (IN)
+                         net (fo=0)                   0.000    40.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         1.421    41.421 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.181    42.602    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.083    42.685 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           1.594    44.279    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    44.370 r  PLL/clk1buf/O
+                         net (fo=169, routed)         1.563    45.933    HDMI/tg/clk1_o
+    SLICE_X42Y96         FDRE                                         r  HDMI/tg/disparity_reg[3]/C
+                         clock pessimism              0.485    46.418    
+                         clock uncertainty           -0.088    46.330    
+    SLICE_X42Y96         FDRE (Setup_fdre_C_D)        0.118    46.448    HDMI/tg/disparity_reg[3]
+  -------------------------------------------------------------------
+                         required time                         46.448    
+                         arrival time                         -15.316    
+  -------------------------------------------------------------------
+                         slack                                 31.132    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.210ns  (arrival time - required time)
+  Source:                 HDMI/tb/disparity_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            HDMI/tb/disparity_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.331ns  (logic 0.246ns (74.266%)  route 0.085ns (25.734%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.411ns
+    Source Clock Delay      (SCD):    1.859ns
+    Clock Pessimism Removal (CPR):    0.552ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.587     1.859    HDMI/tb/clk1_o
+    SLICE_X42Y90         FDRE                                         r  HDMI/tb/disparity_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y90         FDRE (Prop_fdre_C_Q)         0.148     2.007 r  HDMI/tb/disparity_reg[3]/Q
+                         net (fo=8, routed)           0.085     2.093    HDMI/tb/Q[0]
+    SLICE_X42Y90         LUT2 (Prop_lut2_I0_O)        0.098     2.191 r  HDMI/tb/disparity[0]_i_1/O
+                         net (fo=1, routed)           0.000     2.191    HDMI/tb/disparity[0]_i_1_n_0
+    SLICE_X42Y90         FDRE                                         r  HDMI/tb/disparity_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.857     2.411    HDMI/tb/clk1_o
+    SLICE_X42Y90         FDRE                                         r  HDMI/tb/disparity_reg[0]/C
+                         clock pessimism             -0.552     1.859    
+    SLICE_X42Y90         FDRE (Hold_fdre_C_D)         0.121     1.980    HDMI/tb/disparity_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.980    
+                         arrival time                           2.191    
+  -------------------------------------------------------------------
+                         slack                                  0.210    
+
+Slack (MET) :             0.229ns  (arrival time - required time)
+  Source:                 CELDAPACMAN/Contfils/counter_reg_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CELDAPACMAN/Contfils/counter_reg_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.382ns  (logic 0.209ns (54.712%)  route 0.173ns (45.288%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.033ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.373ns
+    Source Clock Delay      (SCD):    1.824ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.552     1.824    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X34Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y81         FDCE (Prop_fdce_C_Q)         0.164     1.988 f  CELDAPACMAN/Contfils/counter_reg_reg[4]/Q
+                         net (fo=29, routed)          0.173     2.161    CELDAPACMAN/Contfils/counter_reg_reg[4]_0[4]
+    SLICE_X32Y81         LUT6 (Prop_lut6_I4_O)        0.045     2.206 r  CELDAPACMAN/Contfils/counter_reg[2]_i_1__0/O
+                         net (fo=1, routed)           0.000     2.206    CELDAPACMAN/Contfils/p_0_in__0[2]
+    SLICE_X32Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.819     2.373    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X32Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[2]/C
+                         clock pessimism             -0.516     1.857    
+    SLICE_X32Y81         FDCE (Hold_fdce_C_D)         0.120     1.977    CELDAPACMAN/Contfils/counter_reg_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.977    
+                         arrival time                           2.206    
+  -------------------------------------------------------------------
+                         slack                                  0.229    
+
+Slack (MET) :             0.244ns  (arrival time - required time)
+  Source:                 CELDAPACMAN/Contfils/counter_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CELDAPACMAN/Contfils/counter_reg_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.399ns  (logic 0.209ns (52.340%)  route 0.190ns (47.660%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.374ns
+    Source Clock Delay      (SCD):    1.824ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.552     1.824    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X32Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y81         FDCE (Prop_fdce_C_Q)         0.164     1.988 r  CELDAPACMAN/Contfils/counter_reg_reg[2]/Q
+                         net (fo=29, routed)          0.190     2.179    CELDAPACMAN/Contfils/counter_reg_reg[4]_0[2]
+    SLICE_X34Y81         LUT6 (Prop_lut6_I2_O)        0.045     2.224 r  CELDAPACMAN/Contfils/counter_reg[1]_i_1/O
+                         net (fo=1, routed)           0.000     2.224    CELDAPACMAN/Contfils/p_0_in__0[1]
+    SLICE_X34Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.820     2.374    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X34Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[1]/C
+                         clock pessimism             -0.516     1.858    
+    SLICE_X34Y81         FDCE (Hold_fdce_C_D)         0.121     1.979    CELDAPACMAN/Contfils/counter_reg_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.979    
+                         arrival time                           2.224    
+  -------------------------------------------------------------------
+                         slack                                  0.244    
+
+Slack (MET) :             0.244ns  (arrival time - required time)
+  Source:                 CELDAPACMAN/Contfils/counter_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CELDAPACMAN/Contfils/counter_reg_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.399ns  (logic 0.209ns (52.340%)  route 0.190ns (47.660%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.374ns
+    Source Clock Delay      (SCD):    1.824ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.552     1.824    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X32Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y81         FDCE (Prop_fdce_C_Q)         0.164     1.988 r  CELDAPACMAN/Contfils/counter_reg_reg[2]/Q
+                         net (fo=29, routed)          0.190     2.179    CELDAPACMAN/Contfils/counter_reg_reg[4]_0[2]
+    SLICE_X34Y81         LUT6 (Prop_lut6_I3_O)        0.045     2.224 r  CELDAPACMAN/Contfils/counter_reg[4]_i_1/O
+                         net (fo=1, routed)           0.000     2.224    CELDAPACMAN/Contfils/p_0_in__0[4]
+    SLICE_X34Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.820     2.374    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X34Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[4]/C
+                         clock pessimism             -0.516     1.858    
+    SLICE_X34Y81         FDCE (Hold_fdce_C_D)         0.121     1.979    CELDAPACMAN/Contfils/counter_reg_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.979    
+                         arrival time                           2.224    
+  -------------------------------------------------------------------
+                         slack                                  0.244    
+
+Slack (MET) :             0.247ns  (arrival time - required time)
+  Source:                 CELDAPACMAN/Contfils/counter_reg_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CELDAPACMAN/Contfils/counter_reg_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.401ns  (logic 0.209ns (52.079%)  route 0.192ns (47.921%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.374ns
+    Source Clock Delay      (SCD):    1.824ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.552     1.824    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X32Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y81         FDCE (Prop_fdce_C_Q)         0.164     1.988 r  CELDAPACMAN/Contfils/counter_reg_reg[2]/Q
+                         net (fo=29, routed)          0.192     2.181    CELDAPACMAN/Contfils/counter_reg_reg[4]_0[2]
+    SLICE_X34Y81         LUT6 (Prop_lut6_I5_O)        0.045     2.226 r  CELDAPACMAN/Contfils/counter_reg[3]_i_1__0/O
+                         net (fo=1, routed)           0.000     2.226    CELDAPACMAN/Contfils/p_0_in__0[3]
+    SLICE_X34Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.820     2.374    CELDAPACMAN/Contfils/clk1_o
+    SLICE_X34Y81         FDCE                                         r  CELDAPACMAN/Contfils/counter_reg_reg[3]/C
+                         clock pessimism             -0.516     1.858    
+    SLICE_X34Y81         FDCE (Hold_fdce_C_D)         0.120     1.978    CELDAPACMAN/Contfils/counter_reg_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.978    
+                         arrival time                           2.226    
+  -------------------------------------------------------------------
+                         slack                                  0.247    
+
+Slack (MET) :             0.248ns  (arrival time - required time)
+  Source:                 SYNCVGA/ContCols/counter_reg_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            SYNCVGA/ContCols/counter_reg_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.373ns  (logic 0.209ns (55.992%)  route 0.164ns (44.008%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.033ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.370ns
+    Source Clock Delay      (SCD):    1.821ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.549     1.821    SYNCVGA/ContCols/clk1_o
+    SLICE_X32Y77         FDCE                                         r  SYNCVGA/ContCols/counter_reg_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y77         FDCE (Prop_fdce_C_Q)         0.164     1.985 r  SYNCVGA/ContCols/counter_reg_reg[0]/Q
+                         net (fo=27, routed)          0.164     2.150    SYNCVGA/ContCols/counter_reg_reg[8]_1[0]
+    SLICE_X35Y77         LUT6 (Prop_lut6_I5_O)        0.045     2.195 r  SYNCVGA/ContCols/counter_reg[6]_i_1/O
+                         net (fo=1, routed)           0.000     2.195    SYNCVGA/ContCols/p_0_in[6]
+    SLICE_X35Y77         FDCE                                         r  SYNCVGA/ContCols/counter_reg_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.816     2.370    SYNCVGA/ContCols/clk1_o
+    SLICE_X35Y77         FDCE                                         r  SYNCVGA/ContCols/counter_reg_reg[6]/C
+                         clock pessimism             -0.516     1.854    
+    SLICE_X35Y77         FDCE (Hold_fdce_C_D)         0.092     1.946    SYNCVGA/ContCols/counter_reg_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.946    
+                         arrival time                           2.195    
+  -------------------------------------------------------------------
+                         slack                                  0.248    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 CeldaGHOST/Cont100ms/counter_reg_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CeldaGHOST/Cont100ms/counter_reg_reg[15]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.366ns  (logic 0.249ns (67.994%)  route 0.117ns (32.006%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.407ns
+    Source Clock Delay      (SCD):    1.856ns
+    Clock Pessimism Removal (CPR):    0.551ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.584     1.856    CeldaGHOST/Cont100ms/clk1_o
+    SLICE_X41Y85         FDCE                                         r  CeldaGHOST/Cont100ms/counter_reg_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y85         FDCE (Prop_fdce_C_Q)         0.141     1.997 r  CeldaGHOST/Cont100ms/counter_reg_reg[15]/Q
+                         net (fo=2, routed)           0.117     2.115    CeldaGHOST/Cont100ms/counter_reg_reg_n_0_[15]
+    SLICE_X41Y85         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     2.223 r  CeldaGHOST/Cont100ms/counter_reg_reg[12]_i_1__0/O[3]
+                         net (fo=1, routed)           0.000     2.223    CeldaGHOST/Cont100ms/counter_reg_reg[12]_i_1__0_n_4
+    SLICE_X41Y85         FDCE                                         r  CeldaGHOST/Cont100ms/counter_reg_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.853     2.407    CeldaGHOST/Cont100ms/clk1_o
+    SLICE_X41Y85         FDCE                                         r  CeldaGHOST/Cont100ms/counter_reg_reg[15]/C
+                         clock pessimism             -0.551     1.856    
+    SLICE_X41Y85         FDCE (Hold_fdce_C_D)         0.105     1.961    CeldaGHOST/Cont100ms/counter_reg_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.961    
+                         arrival time                           2.223    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 CeldaGHOST/Cont100ms/counter_reg_reg[19]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CeldaGHOST/Cont100ms/counter_reg_reg[19]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.366ns  (logic 0.249ns (67.994%)  route 0.117ns (32.006%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.407ns
+    Source Clock Delay      (SCD):    1.856ns
+    Clock Pessimism Removal (CPR):    0.551ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.584     1.856    CeldaGHOST/Cont100ms/clk1_o
+    SLICE_X41Y86         FDCE                                         r  CeldaGHOST/Cont100ms/counter_reg_reg[19]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y86         FDCE (Prop_fdce_C_Q)         0.141     1.997 r  CeldaGHOST/Cont100ms/counter_reg_reg[19]/Q
+                         net (fo=2, routed)           0.117     2.115    CeldaGHOST/Cont100ms/counter_reg_reg_n_0_[19]
+    SLICE_X41Y86         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     2.223 r  CeldaGHOST/Cont100ms/counter_reg_reg[16]_i_1__0/O[3]
+                         net (fo=1, routed)           0.000     2.223    CeldaGHOST/Cont100ms/counter_reg_reg[16]_i_1__0_n_4
+    SLICE_X41Y86         FDCE                                         r  CeldaGHOST/Cont100ms/counter_reg_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.853     2.407    CeldaGHOST/Cont100ms/clk1_o
+    SLICE_X41Y86         FDCE                                         r  CeldaGHOST/Cont100ms/counter_reg_reg[19]/C
+                         clock pessimism             -0.551     1.856    
+    SLICE_X41Y86         FDCE (Hold_fdce_C_D)         0.105     1.961    CeldaGHOST/Cont100ms/counter_reg_reg[19]
+  -------------------------------------------------------------------
+                         required time                         -1.961    
+                         arrival time                           2.223    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+Slack (MET) :             0.264ns  (arrival time - required time)
+  Source:                 CELDAPACMAN/Cont100ms/counter_reg_reg[11]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CELDAPACMAN/Cont100ms/counter_reg_reg[11]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.424%)  route 0.120ns (32.576%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.405ns
+    Source Clock Delay      (SCD):    1.854ns
+    Clock Pessimism Removal (CPR):    0.551ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.582     1.854    CELDAPACMAN/Cont100ms/clk1_o
+    SLICE_X37Y85         FDCE                                         r  CELDAPACMAN/Cont100ms/counter_reg_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y85         FDCE (Prop_fdce_C_Q)         0.141     1.995 r  CELDAPACMAN/Cont100ms/counter_reg_reg[11]/Q
+                         net (fo=2, routed)           0.120     2.116    CELDAPACMAN/Cont100ms/counter_reg_reg_n_0_[11]
+    SLICE_X37Y85         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     2.224 r  CELDAPACMAN/Cont100ms/counter_reg_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     2.224    CELDAPACMAN/Cont100ms/counter_reg_reg[8]_i_1_n_4
+    SLICE_X37Y85         FDCE                                         r  CELDAPACMAN/Cont100ms/counter_reg_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.851     2.405    CELDAPACMAN/Cont100ms/clk1_o
+    SLICE_X37Y85         FDCE                                         r  CELDAPACMAN/Cont100ms/counter_reg_reg[11]/C
+                         clock pessimism             -0.551     1.854    
+    SLICE_X37Y85         FDCE (Hold_fdce_C_D)         0.105     1.959    CELDAPACMAN/Cont100ms/counter_reg_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -1.959    
+                         arrival time                           2.224    
+  -------------------------------------------------------------------
+                         slack                                  0.264    
+
+Slack (MET) :             0.264ns  (arrival time - required time)
+  Source:                 CELDAPACMAN/Cont100ms/counter_reg_reg[15]/C
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            CELDAPACMAN/Cont100ms/counter_reg_reg[15]/D
+                            (rising edge-triggered cell FDCE clocked by pllclk1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             pllclk1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (pllclk1 rise@0.000ns - pllclk1 rise@0.000ns)
+  Data Path Delay:        0.369ns  (logic 0.249ns (67.412%)  route 0.120ns (32.588%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.405ns
+    Source Clock Delay      (SCD):    1.854ns
+    Clock Pessimism Removal (CPR):    0.551ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.259     0.259 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.700    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.050     0.750 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.497     1.247    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.273 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.582     1.854    CELDAPACMAN/Cont100ms/clk1_o
+    SLICE_X37Y86         FDCE                                         r  CELDAPACMAN/Cont100ms/counter_reg_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y86         FDCE (Prop_fdce_C_Q)         0.141     1.995 r  CELDAPACMAN/Cont100ms/counter_reg_reg[15]/Q
+                         net (fo=2, routed)           0.120     2.116    CELDAPACMAN/Cont100ms/counter_reg_reg_n_0_[15]
+    SLICE_X37Y86         CARRY4 (Prop_carry4_S[3]_O[3])
+                                                      0.108     2.224 r  CELDAPACMAN/Cont100ms/counter_reg_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000     2.224    CELDAPACMAN/Cont100ms/counter_reg_reg[12]_i_1_n_4
+    SLICE_X37Y86         FDCE                                         r  CELDAPACMAN/Cont100ms/counter_reg_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock pllclk1 rise edge)    0.000     0.000 r  
+    K17                                               0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    K17                  IBUF (Prop_ibuf_I_O)         0.447     0.447 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.481     0.928    PLL/clk_i
+    PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT1)
+                                                      0.053     0.981 r  PLL/clock/CLKOUT1
+                         net (fo=1, routed)           0.544     1.525    PLL/pllclk1
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.554 r  PLL/clk1buf/O
+                         net (fo=169, routed)         0.851     2.405    CELDAPACMAN/Cont100ms/clk1_o
+    SLICE_X37Y86         FDCE                                         r  CELDAPACMAN/Cont100ms/counter_reg_reg[15]/C
+                         clock pessimism             -0.551     1.854    
+    SLICE_X37Y86         FDCE (Hold_fdce_C_D)         0.105     1.959    CELDAPACMAN/Cont100ms/counter_reg_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.959    
+                         arrival time                           2.224    
+  -------------------------------------------------------------------
+                         slack                                  0.264    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         pllclk1
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { PLL/clock/CLKOUT1 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB18_X1Y30    MemoriaPSJgreen/dout_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB18_X1Y31    cMemoriaPSJred/dout_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         40.000      37.424     RAMB18_X2Y30    MemoriaPSJblue/dout_reg/CLKARDCLK
+Min Period        n/a     BUFG/I              n/a            2.155         40.000      37.845     BUFGCTRL_X0Y16  PLL/clk1buf/I
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         40.000      38.333     OLOGIC_X0Y97    HDMI/ser_g/fors7.slave/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         40.000      38.333     OLOGIC_X0Y96    HDMI/ser_r/fors7.master/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         40.000      38.333     OLOGIC_X0Y95    HDMI/ser_r/fors7.slave/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         40.000      38.333     OLOGIC_X0Y92    HDMI/ser_b/fors7.master/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         40.000      38.333     OLOGIC_X0Y91    HDMI/ser_b/fors7.slave/CLKDIV
+Min Period        n/a     OSERDESE2/CLKDIV    n/a            1.667         40.000      38.333     OLOGIC_X0Y74    HDMI/ser_c/fors7.master/CLKDIV
+Max Period        n/a     PLLE2_ADV/CLKOUT1   n/a            160.000       40.000      120.000    PLLE2_ADV_X0Y1  PLL/clock/CLKOUT1
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X39Y78    MemoriaMapGreen/dout_reg[13]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X39Y78    MemoriaMapGreen/dout_reg[15]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X39Y78    MemoriaMapGreen/dout_reg[21]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y82    CELDAPACMAN/ContCols/counter_reg_reg[1]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y82    CELDAPACMAN/ContCols/counter_reg_reg[2]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y82    CELDAPACMAN/ContCols/counter_reg_reg[3]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y82    CELDAPACMAN/ContCols/counter_reg_reg[4]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X36Y78    CELDAPACMAN/S_filsUP_reg/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X42Y90    HDMI/tb/disparity_reg[0]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         20.000      19.500     SLICE_X42Y90    HDMI/tb/disparity_reg[1]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y83    CELDAPACMAN/Cont100ms/counter_reg_reg[0]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y85    CELDAPACMAN/Cont100ms/counter_reg_reg[10]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y83    CELDAPACMAN/Cont100ms/counter_reg_reg[3]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y84    CELDAPACMAN/Cont100ms/counter_reg_reg[4]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y84    CELDAPACMAN/Cont100ms/counter_reg_reg[5]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y84    CELDAPACMAN/Cont100ms/counter_reg_reg[6]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y84    CELDAPACMAN/Cont100ms/counter_reg_reg[7]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y85    CELDAPACMAN/Cont100ms/counter_reg_reg[8]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X37Y85    CELDAPACMAN/Cont100ms/counter_reg_reg[9]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         20.000      19.500     SLICE_X32Y81    CELDAPACMAN/Contfils/counter_reg_reg[0]/C
+
+
+

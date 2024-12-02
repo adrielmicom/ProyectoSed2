@@ -1,0 +1,2787 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 1580
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Nov 30 11:45:54 CET 2024
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	a.martinmo.2019
+User home directory: C:/Users/a.martinmo.2019
+User working directory: R:/Desktop/SED2/VGA
+User country: 	ES
+User language: 	es
+User locale: 	es_ES
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/a.martinmo.2019/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/a.martinmo.2019/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/a.martinmo.2019/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	R:/Desktop/SED2/VGA/vivado.log
+Vivado journal file location: 	R:/Desktop/SED2/VGA/vivado.jou
+Engine tmp dir: 	R:/Desktop/SED2/VGA/.Xil/Vivado-1580-VD023006
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: C:\Xilinx\14.7\ISE_DS\.xinstall\Xilinx.lic
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_SDK: C:/Xilinx/Vitis/2020.2
+XILINX_VITIS: C:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,118 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: INFO: [Common 17-724] Xilinx Tcl Store apps are automatically updated. 
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: R:\Desktop\SED2\VGA\VGA.xpr. Version: Vivado v2020.2 
+// Tcl Message: open_project R:/Desktop/SED2/VGA/VGA.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,118 MB. GUI used memory: 54 MB. Current time: 11/30/24, 11:45:55 AM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project R:/Desktop/SED2/VGA/VGA.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 58 MB (+58773kb) [00:00:21]
+// [Engine Memory]: 1,118 MB (+1021200kb) [00:00:21]
+// [GUI Memory]: 62 MB (+1105kb) [00:00:21]
+// [GUI Memory]: 105 MB (+40976kb) [00:00:23]
+// WARNING: HEventQueue.dispatchEvent() is taking  5107 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: VGA; location: R:/Desktop/SED2/VGA; part: xc7z010clg400-1
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3147 ms. Increasing delay to 3000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1109.223 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2323 ms. Increasing delay to 6969 ms.
+// [GUI Memory]: 125 MB (+16259kb) [00:00:32]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3838 ms. Increasing delay to 4000 ms.
+// [GUI Memory]: 133 MB (+937kb) [00:00:36]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 175 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd)]", 1); // D
+// PAPropertyPanels.initPanels (pinta_barras.vhd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd), PINTAc : pinta_barras(behavioral) (pinta_barras.vhd)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd), PINTAc : pinta_barras(behavioral) (pinta_barras.vhd)]", 4, false, false, false, false, false, true); // D - Double Click
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2034 ms. Increasing delay to 5000 ms.
+selectCodeEditor("pinta_barras.vhd", 43, 384); // bP
+selectCodeEditor("pinta_barras.vhd", 47, 396); // bP
+selectCodeEditor("pinta_barras.vhd", 47, 396, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 185, 401); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7z010clg400-1 Top: Top_VGA 
+// Elapsed time: 12 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// 'dV' command handler elapsed time: 13 seconds
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2651 ms. Increasing delay to 6000 ms.
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_VGA.vhd", 194, 400); // bP
+selectCodeEditor("Top_VGA.vhd", 174, 269); // bP
+selectCodeEditor("Top_VGA.vhd", 154, 437); // bP
+selectCodeEditor("Top_VGA.vhd", 154, 437, false, false, false, false, true); // bP - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,210 MB. GUI used memory: 78 MB. Current time: 11/30/24, 11:49:55 AM CET
+// TclEventType: ELABORATE_START
+// [Engine Memory]: 1,431 MB (+269679kb) [00:04:20]
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_VGA.vhd", 132, 483); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,522 MB. GUI used memory: 79 MB. Current time: 11/30/24, 11:50:10 AM CET
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,571 MB. GUI used memory: 78 MB. Current time: 11/30/24, 11:50:20 AM CET
+// [Engine Memory]: 1,574 MB (+73869kb) [00:04:40]
+// Xgd.load filename: C:/Xilinx/Vivado/2020.2/data/parts/xilinx/zynq/devint/zynq/xc7z010/xc7z010.xgd; ZipEntry: xc7z010_detail.xgd elapsed time: 0.7s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.9s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,660 MB (+8578kb) [00:04:43]
+// [GUI Memory]: 144 MB (+5115kb) [00:04:43]
+// [GUI Memory]: 154 MB (+2903kb) [00:04:43]
+// Schematic: addNotify
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3893 ms. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4510 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z010clg400-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1478.844 ; gain = 250.086 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Top_VGA' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:50] 
+// Tcl Message: 	Parameter CLKIN_PERIOD bound to: 8.000000 - type: double  	Parameter CLK_MULTIPLY bound to: 8 - type: integer  	Parameter CLK_DIVIDE bound to: 1 - type: integer  	Parameter CLKOUT0_DIV bound to: 8 - type: integer  	Parameter CLKOUT1_DIV bound to: 40 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'clock_gen' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:34' bound to instance 'PLL' of component 'clock_gen' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:221] INFO: [Synth 8-638] synthesizing module 'clock_gen' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:50] 
+// Tcl Message: 	Parameter CLKIN_PERIOD bound to: 8.000000 - type: double  	Parameter CLK_MULTIPLY bound to: 8 - type: integer  	Parameter CLK_DIVIDE bound to: 1 - type: integer  	Parameter CLKOUT0_DIV bound to: 8 - type: integer  	Parameter CLKOUT1_DIV bound to: 40 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'clk0buf' to cell 'BUFG' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:60] INFO: [Synth 8-113] binding component instance 'clk1buf' to cell 'BUFG' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:61] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'clock' to cell 'PLLE2_BASE' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:62] INFO: [Synth 8-256] done synthesizing module 'clock_gen' (1#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:50] INFO: [Synth 8-3491] module 'sync_vga' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:34' bound to instance 'SYNCVGA' of component 'sync_vga' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:231] INFO: [Synth 8-638] synthesizing module 'sync_vga' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:47] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 800 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:76] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 800 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down' (2#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Contfils' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:91] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized1' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized1' (2#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] INFO: [Synth 8-256] done synthesizing module 'sync_vga' (3#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:47] INFO: [Synth 8-3491] module 'pinta_barras' declared at 'R:/Desktop/SED2/VGA/pinta_barras.vhd:13' bound to instance 'PINTAc' of component 'pinta_barras' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:245] INFO: [Synth 8-638] synthesizing module 'pinta_barras' [R:/Desktop/SED2/VGA/pinta_barras.vhd:37] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pinta_barras' (4#1) [R:/Desktop/SED2/VGA/pinta_barras.vhd:37] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-3491] module 'hdmi_rgb2tmds' declared at 'R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:4' bound to instance 'HDMI' of component 'hdmi_rgb2tmds' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:268] INFO: [Synth 8-638] synthesizing module 'hdmi_rgb2tmds' [R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:28] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'hdmi_tmds_encoder' [R:/Desktop/SED2/VGA/hdmi_tmds_encoder.vhd:15] INFO: [Synth 8-256] done synthesizing module 'hdmi_tmds_encoder' (5#1) [R:/Desktop/SED2/VGA/hdmi_tmds_encoder.vhd:15] INFO: [Synth 8-638] synthesizing module 'hdmi_serializer' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:20] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IOSTANDARD bound to: TMDS_33 - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'obuf' to cell 'OBUFDS' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:26] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'master' to cell 'OSERDESE2' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:36] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'slave' to cell 'OSERDESE2' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:73] INFO: [Synth 8-256] done synthesizing module 'hdmi_serializer' (6#1) [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:20] INFO: [Synth 8-256] done synthesizing module 'hdmi_rgb2tmds' (7#1) [R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:28] INFO: [Synth 8-3491] module 'PosicionPACman' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:36' bound to instance 'CELDAPACMAN' of component 'PosicionPACman' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:289] INFO: [Synth 8-638] synthesizing module 'PosicionPACman' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:50] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:155] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized3' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized3' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Contfils' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:168] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized5' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized5' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont100ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:187] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized7' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized7' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 3 - type: integer  	Parameter MAX_VALOR bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont500ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:202] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized9' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 3 - type: integer  	Parameter MAX_VALOR bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized9' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] INFO: [Synth 8-256] done synthesizing module 'PosicionPACman' (8#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:50] INFO: [Synth 8-3491] module 'MEghost' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:34' bound to instance 'CeldaGHOST' of component 'MEghost' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:303] INFO: [Synth 8-638] synthesizing module 'MEghost' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:44] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont100ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:147] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:161] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.324 ; gain = 308.566 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1554.078 ; gain = 325.320 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1554.078 ; gain = 325.320 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1566.109 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [R:/Desktop/SED2/VGA/VGA.srcs/constrs_1/new/zybo_10.xdc] 
+// Tcl Message: Finished Parsing XDC File [R:/Desktop/SED2/VGA/VGA.srcs/constrs_1/new/zybo_10.xdc] Completed Processing XDC Constraints  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1676.938 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1 instances were transformed.   PLLE2_BASE => PLLE2_ADV: 1 instance   
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 1763.020 ; gain = 534.262 
+// Tcl Message: 62 Infos, 12 Warnings, 2 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:58 . Memory (MB): peak = 1763.703 ; gain = 654.480 
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 21 seconds
+dismissDialog("Open Elaborated Design"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 198, 506); // bP
+selectCodeEditor("Top_VGA.vhd", 114, 520); // bP
+selectCodeEditor("Top_VGA.vhd", 260, 532); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,698 MB. GUI used memory: 107 MB. Current time: 11/30/24, 11:51:20 AM CET
+// HOptionPane Error: 'Please use ASCII characters for file name or path. (Non-ASCII Characters Found)'
+// Elapsed time: 20 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+// HOptionPane Error: 'Please use ASCII characters for file name or path. (Non-ASCII Characters Found)'
+selectButton("OptionPane.button", "OK"); // JButton
+// HOptionPane Error: 'Please use ASCII characters in your file name. (Non-ASCII Characters Found)'
+dismissFileChooser();
+selectButton("OptionPane.button", "OK"); // JButton
+// 'g' command handler elapsed time: 43 seconds
+dismissDialog("Add Sources"); // c
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd)]", 1); // D
+// [GUI Memory]: 163 MB (+1415kb) [00:06:22]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+selectButton(RDIResource.HJFileChooserHelpers_JUMP_TO_CURRENT_WORKING_DIRECTORY, (String) null); // a
+selectButton(RDIResource.HJFileChooserHelpers_JUMP_TO_CURRENT_WORKING_DIRECTORY, (String) null); // a
+// HOptionPane Error: 'Please use ASCII characters for file name or path. (Non-ASCII Characters Found)'
+// Elapsed time: 21 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+dismissFileChooser();
+// Elapsed time: 25 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  1815 ms.
+dismissFolderChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+String[] filenames31467 = {"R:/Desktop/SED2/VGA/rom1b_blue_racetrack_1.vhd", "R:/Desktop/SED2/VGA/rom1b_green_racetrack_1.vhd"};
+setFileChooser(filenames31467);
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", true); // g: TRUE
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 79 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// c (cr): Add Sources: addNotify
+// bz (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {R:/Desktop/SED2/VGA/rom1b_green_racetrack_1.vhd R:/Desktop/SED2/VGA/rom1b_blue_racetrack_1.vhd} 
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // bz
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 2); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("pinta_barras.vhd", 350, 396); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 351, 402); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 73, 422); // bP
+selectCodeEditor("pinta_barras.vhd", 74, 422); // bP
+selectCodeEditor("pinta_barras.vhd", 77, 427); // bP
+selectCodeEditor("pinta_barras.vhd", 403, 451); // bP
+selectCodeEditor("pinta_barras.vhd", 54, 144); // bP
+selectCodeEditor("pinta_barras.vhd", 54, 144, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("pinta_barras.vhd", 365, 280); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_VGA.vhd", 386, 176); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 23, 210); // bP
+selectCodeEditor("Top_VGA.vhd", 97, 191); // bP
+selectCodeEditor("Top_VGA.vhd", 62, 211); // bP
+selectCodeEditor("Top_VGA.vhd", 435, 219); // bP
+selectCodeEditor("Top_VGA.vhd", 227, 432); // bP
+selectCodeEditor("Top_VGA.vhd", 74, 453); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 32, 470); // bP
+selectCodeEditor("Top_VGA.vhd", 24, 473); // bP
+selectCodeEditor("Top_VGA.vhd", 95, 448, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 159, 447); // bP
+selectCodeEditor("Top_VGA.vhd", 160, 447, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 145, 466); // bP
+selectCodeEditor("Top_VGA.vhd", 153, 469); // bP
+selectCodeEditor("Top_VGA.vhd", 152, 451, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 260, 436); // bP
+selectCodeEditor("Top_VGA.vhd", 173, 448); // bP
+selectCodeEditor("Top_VGA.vhd", 161, 451, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 186, 472); // bP
+selectCodeEditor("Top_VGA.vhd", 133, 435); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 176, 448); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 170, 470); // bP
+selectCodeEditor("Top_VGA.vhd", 175, 469); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 282, 463); // bP
+selectCodeEditor("Top_VGA.vhd", 378, 419); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 383, 423); // bP
+selectCodeEditor("Top_VGA.vhd", 28, 426); // bP
+selectCodeEditor("Top_VGA.vhd", 27, 430, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 14, 440); // bP
+selectCodeEditor("Top_VGA.vhd", 37, 437); // bP
+selectCodeEditor("Top_VGA.vhd", 137, 439); // bP
+selectCodeEditor("Top_VGA.vhd", 133, 437); // bP
+selectCodeEditor("Top_VGA.vhd", 135, 454); // bP
+selectCodeEditor("Top_VGA.vhd", 376, 496); // bP
+selectCodeEditor("Top_VGA.vhd", 210, 394); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_blue_racetrack_1(BEHAVIORAL) (rom1b_blue_racetrack_1.vhd)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_blue_racetrack_1(BEHAVIORAL) (rom1b_blue_racetrack_1.vhd)]", 10, false, false, false, false, false, true); // D - Double Click
+// WARNING: HTimer (StateMonitor Timer) is taking 607ms to process. Increasing delay to 4000 ms.
+selectCodeEditor("rom1b_blue_racetrack_1.vhd", 229, 172); // bP
+selectCodeEditor("rom1b_blue_racetrack_1.vhd", 267, 226); // bP
+typeControlKey((HResource) null, "rom1b_blue_racetrack_1.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 185, 407); // bP
+selectCodeEditor("Top_VGA.vhd", 110, 261); // bP
+selectCodeEditor("Top_VGA.vhd", 132, 264); // bP
+selectCodeEditor("Top_VGA.vhd", 163, 267); // bP
+selectCodeEditor("Top_VGA.vhd", 168, 289); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 0, 342, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 63, 397); // bP
+selectCodeEditor("Top_VGA.vhd", 88, 333); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top_VGA.vhd", 60, 437); // bP
+selectCodeEditor("Top_VGA.vhd", 79, 434); // bP
+selectCodeEditor("Top_VGA.vhd", 356, 444); // bP
+selectCodeEditor("Top_VGA.vhd", 254, 443); // bP
+selectCodeEditor("Top_VGA.vhd", 330, 436); // bP
+selectCodeEditor("Top_VGA.vhd", 201, 439); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "rom1b_blue_racetrack_1.vhd", 4); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_green_racetrack_1(BEHAVIORAL) (rom1b_green_racetrack_1.vhd)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_green_racetrack_1(BEHAVIORAL) (rom1b_green_racetrack_1.vhd)]", 11, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("rom1b_green_racetrack_1.vhd", 226, 134); // bP
+typeControlKey((HResource) null, "rom1b_green_racetrack_1.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 170, 306); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 1, 332); // bP
+selectCodeEditor("Top_VGA.vhd", 104, 332); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top_VGA.vhd", 13, 328); // bP
+selectCodeEditor("Top_VGA.vhd", 151, 333); // bP
+selectCodeEditor("Top_VGA.vhd", 151, 332); // bP
+selectCodeEditor("Top_VGA.vhd", 79, 436); // bP
+selectCodeEditor("Top_VGA.vhd", 267, 429); // bP
+selectCodeEditor("Top_VGA.vhd", 186, 384); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 84, 381); // bP
+selectCodeEditor("Top_VGA.vhd", 146, 378); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_VGA.vhd", 46, 461); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 110, 284); // bP
+selectCodeEditor("Top_VGA.vhd", 125, 337); // bP
+selectCodeEditor("Top_VGA.vhd", 105, 365); // bP
+selectCodeEditor("Top_VGA.vhd", 127, 250); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 42, 365); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 349, 367); // bP
+selectCodeEditor("Top_VGA.vhd", 153, 368); // bP
+selectCodeEditor("Top_VGA.vhd", 104, 399); // bP
+selectCodeEditor("Top_VGA.vhd", 98, 387); // bP
+selectCodeEditor("Top_VGA.vhd", 174, 475); // bP
+selectCodeEditor("Top_VGA.vhd", 126, 485); // bP
+selectCodeEditor("Top_VGA.vhd", 122, 401, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 176, 277); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 134, 396); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 125, 297); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 127, 414); // bP
+selectCodeEditor("Top_VGA.vhd", 142, 416); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 187, 320); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 154, 432); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 256, 440); // bP
+selectCodeEditor("Top_VGA.vhd", 206, 438); // bP
+selectCodeEditor("Top_VGA.vhd", 177, 433); // bP
+selectCodeEditor("Top_VGA.vhd", 177, 433, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("Top_VGA.vhd", 169, 268); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 115, 466); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 109, 385); // bP
+selectCodeEditor("Top_VGA.vhd", 42, 297); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 513, 423); // bP
+selectCodeEditor("Top_VGA.vhd", 41, 414); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 114, 417); // bP
+selectCodeEditor("Top_VGA.vhd", 151, 416); // bP
+selectCodeEditor("Top_VGA.vhd", 145, 415); // bP
+selectCodeEditor("Top_VGA.vhd", 145, 415, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 116, 413); // bP
+selectCodeEditor("Top_VGA.vhd", 114, 413, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 359, 419); // bP
+selectCodeEditor("Top_VGA.vhd", 93, 431); // bP
+selectCodeEditor("Top_VGA.vhd", 88, 435); // bP
+selectCodeEditor("Top_VGA.vhd", 100, 435); // bP
+selectCodeEditor("Top_VGA.vhd", 552, 427); // bP
+selectCodeEditor("Top_VGA.vhd", 120, 406); // bP
+selectCodeEditor("Top_VGA.vhd", 121, 403, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 206, 470); // bP
+selectCodeEditor("Top_VGA.vhd", 134, 281, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 134, 281, false, true, false, false, false); // bP - Control Key
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 161, 411); // bP
+selectCodeEditor("Top_VGA.vhd", 131, 398); // bP
+selectCodeEditor("Top_VGA.vhd", 144, 413); // bP
+selectCodeEditor("Top_VGA.vhd", 133, 397, false, true, false, false, false); // bP - Control Key
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 229, 449); // bP
+selectCodeEditor("Top_VGA.vhd", 233, 320); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 136, 440); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 187, 432); // bP
+selectCodeEditor("Top_VGA.vhd", 250, 489); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_VGA.vhd", 130, 466); // bP
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 441ms to process. Increasing delay to 3000 ms.
+selectCodeEditor("Top_VGA.vhd", 226, 434); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_VGA.vhd", 185, 428); // bP
+selectCodeEditor("Top_VGA.vhd", 185, 428, false, false, false, false, true); // bP - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 2); // m
+selectCodeEditor("pinta_barras.vhd", 97, 298); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("pinta_barras.vhd", 15, 298); // bP
+selectCodeEditor("pinta_barras.vhd", 12, 330); // bP
+selectCodeEditor("pinta_barras.vhd", 16, 300); // bP
+selectCodeEditor("pinta_barras.vhd", 640, 449); // bP
+selectCodeEditor("pinta_barras.vhd", 48, 458); // bP
+selectCodeEditor("pinta_barras.vhd", 53, 464); // bP
+selectCodeEditor("pinta_barras.vhd", 302, 414); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("pinta_barras.vhd", 204, 282); // bP
+selectCodeEditor("pinta_barras.vhd", 251, 285); // bP
+selectCodeEditor("pinta_barras.vhd", 251, 285, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 203, 308); // bP
+selectCodeEditor("pinta_barras.vhd", 228, 300); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("pinta_barras.vhd", 192, 308); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("pinta_barras.vhd", 53, 127); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("pinta_barras.vhd", 62, 314); // bP
+selectCodeEditor("pinta_barras.vhd", 19, 163); // bP
+selectCodeEditor("pinta_barras.vhd", 19, 163, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 23, 155); // bP
+selectCodeEditor("pinta_barras.vhd", 25, 312, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 333, 204); // bP
+selectCodeEditor("pinta_barras.vhd", 20, 124, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 394, 187); // bP
+selectCodeEditor("pinta_barras.vhd", 61, 110); // bP
+selectCodeEditor("pinta_barras.vhd", 86, 144); // bP
+selectCodeEditor("pinta_barras.vhd", 36, 105); // bP
+selectCodeEditor("pinta_barras.vhd", 60, 380); // bP
+selectCodeEditor("pinta_barras.vhd", 22, 210); // bP
+selectCodeEditor("pinta_barras.vhd", 22, 209); // bP
+selectCodeEditor("pinta_barras.vhd", 17, 164); // bP
+selectCodeEditor("pinta_barras.vhd", 21, 165); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 0, 488); // bP
+selectCodeEditor("pinta_barras.vhd", 48, 138, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 12 seconds
+selectCodeEditor("pinta_barras.vhd", 33, 207); // bP
+selectCodeEditor("pinta_barras.vhd", 53, 73); // bP
+selectCodeEditor("pinta_barras.vhd", 52, 197); // bP
+selectCodeEditor("pinta_barras.vhd", 42, 384); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("pinta_barras.vhd", 25, 348); // bP
+selectCodeEditor("pinta_barras.vhd", 28, 349); // bP
+selectCodeEditor("pinta_barras.vhd", 55, 243); // bP
+selectCodeEditor("pinta_barras.vhd", 98, 47); // bP
+selectCodeEditor("pinta_barras.vhd", 89, 199); // bP
+selectCodeEditor("pinta_barras.vhd", 102, 296); // bP
+selectCodeEditor("pinta_barras.vhd", 57, 500); // bP
+selectCodeEditor("pinta_barras.vhd", 54, 94, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 219, 390); // bP
+selectCodeEditor("pinta_barras.vhd", 69, 239); // bP
+selectCodeEditor("pinta_barras.vhd", 70, 229); // bP
+selectCodeEditor("pinta_barras.vhd", 70, 229); // bP
+selectCodeEditor("pinta_barras.vhd", 76, 227); // bP
+selectCodeEditor("pinta_barras.vhd", 70, 226); // bP
+selectCodeEditor("pinta_barras.vhd", 60, 228, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 80, 231); // bP
+selectCodeEditor("pinta_barras.vhd", 83, 247); // bP
+selectCodeEditor("pinta_barras.vhd", 82, 243, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 59, 305); // bP
+selectCodeEditor("pinta_barras.vhd", 21, 438); // bP
+selectCodeEditor("pinta_barras.vhd", 26, 142); // bP
+selectCodeEditor("pinta_barras.vhd", 65, 363); // bP
+selectCodeEditor("pinta_barras.vhd", 52, 400); // bP
+selectCodeEditor("pinta_barras.vhd", 49, 418); // bP
+selectCodeEditor("pinta_barras.vhd", 27, 418); // bP
+selectCodeEditor("pinta_barras.vhd", 61, 190); // bP
+selectCodeEditor("pinta_barras.vhd", 266, 194); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("pinta_barras.vhd", 94, 83); // bP
+selectCodeEditor("pinta_barras.vhd", 278, 172); // bP
+selectCodeEditor("pinta_barras.vhd", 53, 130); // bP
+// Elapsed time: 283 seconds
+selectCodeEditor("pinta_barras.vhd", 139, 19); // bP
+selectCodeEditor("pinta_barras.vhd", 181, 433); // bP
+selectCodeEditor("pinta_barras.vhd", 142, 38); // bP
+selectCodeEditor("pinta_barras.vhd", 34, 63); // bP
+selectCodeEditor("pinta_barras.vhd", 33, 72, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 182, 46); // bP
+selectCodeEditor("pinta_barras.vhd", 141, 68); // bP
+selectCodeEditor("pinta_barras.vhd", 122, 61); // bP
+selectCodeEditor("pinta_barras.vhd", 78, 56); // bP
+selectCodeEditor("pinta_barras.vhd", 70, 54, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 567, 460); // bP
+selectCodeEditor("pinta_barras.vhd", 74, 401); // bP
+selectCodeEditor("pinta_barras.vhd", 33, 412); // bP
+selectCodeEditor("pinta_barras.vhd", 71, 404); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("pinta_barras.vhd", 77, 294); // bP
+// Elapsed time: 45 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 140, 229); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("pinta_barras.vhd", 131, 212); // bP
+selectCodeEditor("pinta_barras.vhd", 109, 209); // bP
+selectCodeEditor("pinta_barras.vhd", 139, 201); // bP
+selectCodeEditor("pinta_barras.vhd", 134, 212); // bP
+selectCodeEditor("pinta_barras.vhd", 129, 198); // bP
+selectCodeEditor("pinta_barras.vhd", 114, 204); // bP
+selectCodeEditor("pinta_barras.vhd", 123, 195); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("pinta_barras.vhd", 343, 352); // bP
+selectCodeEditor("pinta_barras.vhd", 336, 348); // bP
+selectCodeEditor("pinta_barras.vhd", 338, 348); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 186, 199); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pinta_barras.vhd", 467, 196); // bP
+selectCodeEditor("pinta_barras.vhd", 495, 197); // bP
+selectCodeEditor("pinta_barras.vhd", 548, 217); // bP
+selectCodeEditor("pinta_barras.vhd", 196, 194); // bP
+selectCodeEditor("pinta_barras.vhd", 478, 225); // bP
+selectCodeEditor("pinta_barras.vhd", 555, 197); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pinta_barras.vhd", 191, 197); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 191, 212); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,720 MB. GUI used memory: 109 MB. Current time: 11/30/24, 12:16:10 PM CET
+// Elapsed time: 35 seconds
+selectCodeEditor("pinta_barras.vhd", 511, 218); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("pinta_barras.vhd", 539, 215); // bP
+selectCodeEditor("pinta_barras.vhd", 271, 151); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 160, 230); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 78, 228, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 284, 229); // bP
+selectCodeEditor("pinta_barras.vhd", 287, 227); // bP
+selectCodeEditor("pinta_barras.vhd", 278, 240); // bP
+selectCodeEditor("pinta_barras.vhd", 278, 263); // bP
+selectCodeEditor("pinta_barras.vhd", 285, 224, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 332, 250); // bP
+selectCodeEditor("pinta_barras.vhd", 330, 270); // bP
+selectCodeEditor("pinta_barras.vhd", 386, 290); // bP
+selectCodeEditor("pinta_barras.vhd", 294, 287); // bP
+selectCodeEditor("pinta_barras.vhd", 324, 268); // bP
+selectCodeEditor("pinta_barras.vhd", 209, 246); // bP
+selectCodeEditor("pinta_barras.vhd", 209, 263); // bP
+selectCodeEditor("pinta_barras.vhd", 292, 244, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 395, 313); // bP
+selectCodeEditor("pinta_barras.vhd", 177, 278); // bP
+selectCodeEditor("pinta_barras.vhd", 328, 263); // bP
+selectCodeEditor("pinta_barras.vhd", 40, 240); // bP
+selectCodeEditor("pinta_barras.vhd", 330, 265); // bP
+selectCodeEditor("pinta_barras.vhd", 44, 222); // bP
+selectCodeEditor("pinta_barras.vhd", 2, 227); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 8, 297); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 296, 298); // bP
+selectCodeEditor("pinta_barras.vhd", 293, 297, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 295, 321); // bP
+selectCodeEditor("pinta_barras.vhd", 489, 345); // bP
+selectCodeEditor("pinta_barras.vhd", 8, 162); // bP
+selectCodeEditor("pinta_barras.vhd", 495, 305); // bP
+selectCodeEditor("pinta_barras.vhd", 37, 160); // bP
+selectCodeEditor("pinta_barras.vhd", 155, 166); // bP
+selectCodeEditor("pinta_barras.vhd", 184, 202); // bP
+selectCodeEditor("pinta_barras.vhd", 179, 246); // bP
+selectCodeEditor("pinta_barras.vhd", 162, 348); // bP
+selectCodeEditor("pinta_barras.vhd", 455, 408); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("pinta_barras.vhd", 122, 420); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("pinta_barras.vhd", 137, 384); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("pinta_barras.vhd", 189, 217); // bP
+selectCodeEditor("pinta_barras.vhd", 446, 332); // bP
+selectCodeEditor("pinta_barras.vhd", 191, 194); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 212, 383); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 540, 423); // bP
+selectCodeEditor("pinta_barras.vhd", 491, 214); // bP
+selectCodeEditor("pinta_barras.vhd", 527, 280); // bP
+selectCodeEditor("pinta_barras.vhd", 331, 333); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 102, 398); // bP
+selectCodeEditor("pinta_barras.vhd", 5, 401); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 143, 396, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 334, 429); // bP
+selectCodeEditor("pinta_barras.vhd", 257, 398, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 255, 400); // bP
+selectCodeEditor("pinta_barras.vhd", 255, 400, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 260, 400); // bP
+selectCodeEditor("pinta_barras.vhd", 295, 387); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 11, 415); // bP
+selectCodeEditor("pinta_barras.vhd", 13, 415); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 257, 415); // bP
+selectCodeEditor("pinta_barras.vhd", 257, 415, false, true, false, false, true); // bP - Control Key - Double Click
+selectCodeEditor("pinta_barras.vhd", 257, 420, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 257, 419, false, true, false, false, true); // bP - Control Key - Double Click
+selectCodeEditor("pinta_barras.vhd", 259, 450); // bP
+selectCodeEditor("pinta_barras.vhd", 397, 447); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 157, 215); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("pinta_barras.vhd", 269, 231); // bP
+selectCodeEditor("pinta_barras.vhd", 331, 467); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+// Elapsed time: 44 seconds
+selectCodeEditor("pinta_barras.vhd", 95, 422); // bP
+selectCodeEditor("pinta_barras.vhd", 92, 439); // bP
+selectCodeEditor("pinta_barras.vhd", 80, 450); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 229, 245); // bP
+selectCodeEditor("pinta_barras.vhd", 222, 247, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 570, 353); // bP
+selectCodeEditor("pinta_barras.vhd", 81, 125); // bP
+selectCodeEditor("pinta_barras.vhd", 85, 126, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 214, 433); // bP
+// Elapsed time: 45 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// [Engine Memory]: 1,754 MB (+10978kb) [00:37:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,762 MB. GUI used memory: 110 MB. Current time: 11/30/24, 12:23:25 PM CET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1858.855 ; gain = 56.777 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Top_VGA' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:50] 
+// Tcl Message: 	Parameter CLKIN_PERIOD bound to: 8.000000 - type: double  	Parameter CLK_MULTIPLY bound to: 8 - type: integer  	Parameter CLK_DIVIDE bound to: 1 - type: integer  	Parameter CLKOUT0_DIV bound to: 8 - type: integer  	Parameter CLKOUT1_DIV bound to: 40 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'clock_gen' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:34' bound to instance 'PLL' of component 'clock_gen' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:240] INFO: [Synth 8-638] synthesizing module 'clock_gen' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:50] 
+// Tcl Message: 	Parameter CLKIN_PERIOD bound to: 8.000000 - type: double  	Parameter CLK_MULTIPLY bound to: 8 - type: integer  	Parameter CLK_DIVIDE bound to: 1 - type: integer  	Parameter CLKOUT0_DIV bound to: 8 - type: integer  	Parameter CLKOUT1_DIV bound to: 40 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'clk0buf' to cell 'BUFG' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:60] INFO: [Synth 8-113] binding component instance 'clk1buf' to cell 'BUFG' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:61] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'clock' to cell 'PLLE2_BASE' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:62] INFO: [Synth 8-256] done synthesizing module 'clock_gen' (1#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:50] INFO: [Synth 8-3491] module 'sync_vga' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:34' bound to instance 'SYNCVGA' of component 'sync_vga' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:250] INFO: [Synth 8-638] synthesizing module 'sync_vga' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:47] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 800 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:76] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 800 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down' (2#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Contfils' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:91] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized1' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized1' (2#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] INFO: [Synth 8-256] done synthesizing module 'sync_vga' (3#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:47] INFO: [Synth 8-3491] module 'pinta_barras' declared at 'R:/Desktop/SED2/VGA/pinta_barras.vhd:13' bound to instance 'PINTAc' of component 'pinta_barras' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:264] INFO: [Synth 8-638] synthesizing module 'pinta_barras' [R:/Desktop/SED2/VGA/pinta_barras.vhd:39] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pinta_barras' (4#1) [R:/Desktop/SED2/VGA/pinta_barras.vhd:39] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-3491] module 'hdmi_rgb2tmds' declared at 'R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:4' bound to instance 'HDMI' of component 'hdmi_rgb2tmds' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:290] INFO: [Synth 8-638] synthesizing module 'hdmi_rgb2tmds' [R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:28] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'hdmi_tmds_encoder' [R:/Desktop/SED2/VGA/hdmi_tmds_encoder.vhd:15] INFO: [Synth 8-256] done synthesizing module 'hdmi_tmds_encoder' (5#1) [R:/Desktop/SED2/VGA/hdmi_tmds_encoder.vhd:15] INFO: [Synth 8-638] synthesizing module 'hdmi_serializer' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:20] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IOSTANDARD bound to: TMDS_33 - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'obuf' to cell 'OBUFDS' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:26] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'master' to cell 'OSERDESE2' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:36] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'slave' to cell 'OSERDESE2' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:73] INFO: [Synth 8-256] done synthesizing module 'hdmi_serializer' (6#1) [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:20] INFO: [Synth 8-256] done synthesizing module 'hdmi_rgb2tmds' (7#1) [R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:28] INFO: [Synth 8-3491] module 'PosicionPACman' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:36' bound to instance 'CELDAPACMAN' of component 'PosicionPACman' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:311] INFO: [Synth 8-638] synthesizing module 'PosicionPACman' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:50] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:155] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized3' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized3' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Contfils' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:168] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized5' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized5' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont100ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:187] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized7' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized7' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 3 - type: integer  	Parameter MAX_VALOR bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont500ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:202] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized9' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 3 - type: integer  	Parameter MAX_VALOR bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized9' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] INFO: [Synth 8-256] done synthesizing module 'PosicionPACman' (8#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:50] INFO: [Synth 8-3491] module 'MEghost' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:34' bound to instance 'CeldaGHOST' of component 'MEghost' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:325] INFO: [Synth 8-638] synthesizing module 'MEghost' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:44] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont100ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:147] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:161] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1901.484 ; gain = 99.406 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,836 MB. GUI used memory: 94 MB. Current time: 11/30/24, 12:23:36 PM CET
+// Engine heap size: 1,836 MB. GUI used memory: 95 MB. Current time: 11/30/24, 12:23:36 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  2316 ms.
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1924.324 ; gain = 122.246 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1924.324 ; gain = 122.246 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,836 MB. GUI used memory: 86 MB. Current time: 11/30/24, 12:23:38 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4084 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1926.965 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [R:/Desktop/SED2/VGA/VGA.srcs/constrs_1/new/zybo_10.xdc] 
+// Tcl Message: Finished Parsing XDC File [R:/Desktop/SED2/VGA/VGA.srcs/constrs_1/new/zybo_10.xdc] Completed Processing XDC Constraints  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1926.965 ; gain = 124.887 
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 20 seconds
+dismissDialog("Reloading"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 139, 177); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// [GUI Memory]: 172 MB (+207kb) [00:38:43]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h
+// bz (cr):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_START
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// [Engine Memory]: 1,844 MB (+2065kb) [00:38:52]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // m
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1945.000 ; gain = 18.035 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,879 MB. GUI used memory: 111 MB. Current time: 11/30/24, 12:24:40 PM CET
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Top_VGA' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:50] 
+// Tcl Message: 	Parameter CLKIN_PERIOD bound to: 8.000000 - type: double  	Parameter CLK_MULTIPLY bound to: 8 - type: integer  	Parameter CLK_DIVIDE bound to: 1 - type: integer  	Parameter CLKOUT0_DIV bound to: 8 - type: integer  	Parameter CLKOUT1_DIV bound to: 40 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'clock_gen' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:34' bound to instance 'PLL' of component 'clock_gen' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:240] INFO: [Synth 8-638] synthesizing module 'clock_gen' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:50] 
+// Tcl Message: 	Parameter CLKIN_PERIOD bound to: 8.000000 - type: double  	Parameter CLK_MULTIPLY bound to: 8 - type: integer  	Parameter CLK_DIVIDE bound to: 1 - type: integer  	Parameter CLKOUT0_DIV bound to: 8 - type: integer  	Parameter CLKOUT1_DIV bound to: 40 - type: integer  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'clk0buf' to cell 'BUFG' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:60] INFO: [Synth 8-113] binding component instance 'clk1buf' to cell 'BUFG' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:61] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'clock' to cell 'PLLE2_BASE' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:62] INFO: [Synth 8-256] done synthesizing module 'clock_gen' (1#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/cloclk_gen.vhd:50] INFO: [Synth 8-3491] module 'sync_vga' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:34' bound to instance 'SYNCVGA' of component 'sync_vga' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:250] INFO: [Synth 8-638] synthesizing module 'sync_vga' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:47] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 800 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:76] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 800 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down' (2#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Contfils' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:91] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized1' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 10 - type: integer  	Parameter MAX_VALOR bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized1' (2#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] INFO: [Synth 8-256] done synthesizing module 'sync_vga' (3#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/sync_vga.vhd:47] INFO: [Synth 8-3491] module 'pinta_barras' declared at 'R:/Desktop/SED2/VGA/pinta_barras.vhd:13' bound to instance 'PINTAc' of component 'pinta_barras' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:264] INFO: [Synth 8-638] synthesizing module 'pinta_barras' [R:/Desktop/SED2/VGA/pinta_barras.vhd:39] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'pinta_barras' (4#1) [R:/Desktop/SED2/VGA/pinta_barras.vhd:39] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-3491] module 'hdmi_rgb2tmds' declared at 'R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:4' bound to instance 'HDMI' of component 'hdmi_rgb2tmds' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:290] INFO: [Synth 8-638] synthesizing module 'hdmi_rgb2tmds' [R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:28] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'hdmi_tmds_encoder' [R:/Desktop/SED2/VGA/hdmi_tmds_encoder.vhd:15] INFO: [Synth 8-256] done synthesizing module 'hdmi_tmds_encoder' (5#1) [R:/Desktop/SED2/VGA/hdmi_tmds_encoder.vhd:15] INFO: [Synth 8-638] synthesizing module 'hdmi_serializer' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:20] 
+// Tcl Message: 	Parameter SERIES6 bound to: 0 - type: bool  	Parameter CAPACITANCE bound to: DONT_CARE - type: string  	Parameter IOSTANDARD bound to: TMDS_33 - type: string  	Parameter SLEW bound to: SLOW - type: string  
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'obuf' to cell 'OBUFDS' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:26] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'master' to cell 'OSERDESE2' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:36] 
+// Tcl Message: INFO: [Synth 8-113] binding component instance 'slave' to cell 'OSERDESE2' [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:73] INFO: [Synth 8-256] done synthesizing module 'hdmi_serializer' (6#1) [R:/Desktop/SED2/VGA/hdmi_serializer.vhd:20] INFO: [Synth 8-256] done synthesizing module 'hdmi_rgb2tmds' (7#1) [R:/Desktop/SED2/VGA/hdmi_rgb2tmds.vhd:28] INFO: [Synth 8-3491] module 'PosicionPACman' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:36' bound to instance 'CELDAPACMAN' of component 'PosicionPACman' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:311] INFO: [Synth 8-638] synthesizing module 'PosicionPACman' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:50] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:155] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized3' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized3' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Contfils' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:168] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized5' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized5' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont100ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:187] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized7' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized7' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 3 - type: integer  	Parameter MAX_VALOR bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont500ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:202] INFO: [Synth 8-638] synthesizing module 'ContadorUp_Down__parameterized9' [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] 
+// Tcl Message: 	Parameter N_BITS bound to: 3 - type: integer  	Parameter MAX_VALOR bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'ContadorUp_Down__parameterized9' (7#1) [R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:49] INFO: [Synth 8-256] done synthesizing module 'PosicionPACman' (8#1) [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/PosicionPACman.vhd:50] INFO: [Synth 8-3491] module 'MEghost' declared at 'R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:34' bound to instance 'CeldaGHOST' of component 'MEghost' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/Top_VGA.vhd:325] INFO: [Synth 8-638] synthesizing module 'MEghost' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:44] 
+// Tcl Message: 	Parameter N_BITS bound to: 22 - type: integer  	Parameter MAX_VALOR bound to: 2500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'Cont100ms' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:147] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-3491] module 'ContadorUp_Down' declared at 'R:/Desktop/SED2/VGA/ContadorUp_Down.vhd:34' bound to instance 'ContCols' of component 'ContadorUp_Down' [R:/Desktop/SED2/VGA/VGA.srcs/sources_1/new/MEghost.vhd:161] 
+// Tcl Message: 	Parameter N_BITS bound to: 5 - type: integer  	Parameter MAX_VALOR bound to: 30 - type: integer  
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1969.676 ; gain = 42.711 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,891 MB. GUI used memory: 89 MB. Current time: 11/30/24, 12:24:46 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,891 MB. GUI used memory: 89 MB. Current time: 11/30/24, 12:24:46 PM CET
+// WARNING: HEventQueue.dispatchEvent() is taking  2127 ms.
+// Tcl Message: --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1982.367 ; gain = 55.402 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1982.367 ; gain = 55.402 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,891 MB. GUI used memory: 89 MB. Current time: 11/30/24, 12:24:48 PM CET
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4036 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1983.402 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [R:/Desktop/SED2/VGA/VGA.srcs/constrs_1/new/zybo_10.xdc] 
+// Tcl Message: Finished Parsing XDC File [R:/Desktop/SED2/VGA/VGA.srcs/constrs_1/new/zybo_10.xdc] Completed Processing XDC Constraints  
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:23 . Memory (MB): peak = 1983.402 ; gain = 56.438 
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 19 seconds
+dismissDialog("Reloading"); // bz
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // U
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1996.582 ; gain = 9.535 
+// cD (cr): Launch Runs: addNotify
+// Elapsed time: 12 seconds
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "4", 3); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 14 seconds
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Nov 30 12:25:24 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 12:25:24 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1997.375 ; gain = 0.793 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 524ms to process. Increasing delay to 3000 ms.
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 363 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 345 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 2); // m
+// Elapsed time: 365 seconds
+selectCodeEditor("pinta_barras.vhd", 63, 213); // bP
+// Elapsed time: 317 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a
+dismissFolderChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 27 seconds
+String[] filenames16706 = {"R:/Desktop/SED2/VGA/rom1b_blue_imagenes16_16x16.vhd", "R:/Desktop/SED2/VGA/rom1b_green_imagenes16_16x16.vhd", "R:/Desktop/SED2/VGA/rom1b_red_imagenes16_16x16.vhd"};
+setFileChooser(filenames16706);
+// Elapsed time: 13 seconds
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 51 seconds
+// [GUI Memory]: 183 MB (+2908kb) [01:03:52]
+dismissDialog("Add Sources"); // c
+// c (cr): Add Sources: addNotify
+// bz (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: import_files -norecurse {R:/Desktop/SED2/VGA/rom1b_red_imagenes16_16x16.vhd R:/Desktop/SED2/VGA/rom1b_green_imagenes16_16x16.vhd R:/Desktop/SED2/VGA/rom1b_blue_imagenes16_16x16.vhd} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // bz
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 26 seconds
+selectCodeEditor("pinta_barras.vhd", 185, 381); // bP
+// Elapsed time: 79 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 84, 177); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_VGA.vhd", 114, 271); // bP
+// PAPropertyPanels.initPanels (rom1b_blue_imagenes16_16x16.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_blue_imagenes16_16x16(BEHAVIORAL) (rom1b_blue_imagenes16_16x16.vhd)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_blue_imagenes16_16x16(BEHAVIORAL) (rom1b_blue_imagenes16_16x16.vhd)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_blue_imagenes16_16x16(BEHAVIORAL) (rom1b_blue_imagenes16_16x16.vhd)]", 12, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("rom1b_blue_imagenes16_16x16.vhd", 55, 158); // bP
+typeControlKey((HResource) null, "rom1b_blue_imagenes16_16x16.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+// Elapsed time: 11 seconds
+selectCodeEditor("Top_VGA.vhd", 190, 279); // bP
+selectCodeEditor("Top_VGA.vhd", 69, 309); // bP
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 7, 328, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 137, 330); // bP
+selectCodeEditor("Top_VGA.vhd", 144, 331); // bP
+selectCodeEditor("Top_VGA.vhd", 57, 282); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 49, 437); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 154, 434); // bP
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_green_imagenes16_16x16(BEHAVIORAL) (rom1b_green_imagenes16_16x16.vhd)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_green_imagenes16_16x16(BEHAVIORAL) (rom1b_green_imagenes16_16x16.vhd)]", 13, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("rom1b_green_imagenes16_16x16.vhd", 273, 123); // bP
+typeControlKey((HResource) null, "rom1b_green_imagenes16_16x16.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 76, 465); // bP
+selectCodeEditor("Top_VGA.vhd", 63, 450); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 6, 332, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 147, 333); // bP
+selectCodeEditor("Top_VGA.vhd", 136, 333); // bP
+selectCodeEditor("Top_VGA.vhd", 149, 330); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top_VGA.vhd", 55, 434); // bP
+selectCodeEditor("Top_VGA.vhd", 76, 435); // bP
+selectCodeEditor("Top_VGA.vhd", 280, 439); // bP
+selectCodeEditor("Top_VGA.vhd", 80, 441); // bP
+selectCodeEditor("Top_VGA.vhd", 226, 442); // bP
+selectCodeEditor("Top_VGA.vhd", 206, 314); // bP
+selectCodeEditor("Top_VGA.vhd", 176, 301); // bP
+selectCodeEditor("Top_VGA.vhd", 63, 28); // bP
+selectCodeEditor("Top_VGA.vhd", 13, 29); // bP
+selectCodeEditor("Top_VGA.vhd", 4, 28); // bP
+selectCodeEditor("Top_VGA.vhd", 229, 28); // bP
+selectCodeEditor("Top_VGA.vhd", 367, 26); // bP
+selectCodeEditor("Top_VGA.vhd", 373, 29); // bP
+selectCodeEditor("Top_VGA.vhd", 514, 33); // bP
+selectCodeEditor("Top_VGA.vhd", 62, 298); // bP
+selectCodeEditor("Top_VGA.vhd", 49, 468); // bP
+selectCodeEditor("Top_VGA.vhd", 112, 144); // bP
+selectCodeEditor("Top_VGA.vhd", 134, 311); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_red_imagenes16_16x16(BEHAVIORAL) (rom1b_red_imagenes16_16x16.vhd)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM1b_1f_red_imagenes16_16x16(BEHAVIORAL) (rom1b_red_imagenes16_16x16.vhd)]", 14, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectCodeEditor("rom1b_red_imagenes16_16x16.vhd", 282, 129); // bP
+typeControlKey((HResource) null, "rom1b_red_imagenes16_16x16.vhd", 'c'); // bP
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 51, 375); // bP
+selectCodeEditor("Top_VGA.vhd", 58, 374); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 1, 404, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("Top_VGA.vhd", 110, 404); // bP
+selectCodeEditor("Top_VGA.vhd", 156, 400); // bP
+selectCodeEditor("Top_VGA.vhd", 537, 477); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,917 MB. GUI used memory: 110 MB. Current time: 11/30/24, 12:54:51 PM CET
+selectCodeEditor("Top_VGA.vhd", 71, 398); // bP
+selectCodeEditor("Top_VGA.vhd", 70, 419); // bP
+selectCodeEditor("Top_VGA.vhd", 125, 404); // bP
+selectCodeEditor("Top_VGA.vhd", 55, 500); // bP
+selectCodeEditor("Top_VGA.vhd", 162, 499); // bP
+selectCodeEditor("Top_VGA.vhd", 80, 497); // bP
+selectCodeEditor("Top_VGA.vhd", 459, 495); // bP
+// Elapsed time: 60 seconds
+selectCodeEditor("Top_VGA.vhd", 442, 354); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_VGA.vhd", 172, 383); // bP
+selectCodeEditor("Top_VGA.vhd", 150, 375); // bP
+selectCodeEditor("Top_VGA.vhd", 150, 375, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("Top_VGA.vhd", 349, 380); // bP
+selectCodeEditor("Top_VGA.vhd", 353, 378); // bP
+selectCodeEditor("Top_VGA.vhd", 33, 387); // bP
+selectCodeEditor("Top_VGA.vhd", 25, 386); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 351, 382); // bP
+selectCodeEditor("Top_VGA.vhd", 30, 402, false, true, false, false, false); // bP - Control Key
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 106, 405); // bP
+selectCodeEditor("Top_VGA.vhd", 106, 418); // bP
+selectCodeEditor("Top_VGA.vhd", 107, 431); // bP
+selectCodeEditor("Top_VGA.vhd", 365, 432); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("Top_VGA.vhd", 374, 451); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 39, 263); // bP
+selectCodeEditor("Top_VGA.vhd", 8, 252); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_VGA.vhd", 77, 335); // bP
+selectCodeEditor("Top_VGA.vhd", 64, 346); // bP
+selectCodeEditor("Top_VGA.vhd", 176, 169); // bP
+selectCodeEditor("Top_VGA.vhd", 167, 180); // bP
+selectCodeEditor("Top_VGA.vhd", 288, 204); // bP
+selectCodeEditor("Top_VGA.vhd", 301, 200); // bP
+selectCodeEditor("Top_VGA.vhd", 14, 217); // bP
+selectCodeEditor("Top_VGA.vhd", 48, 341); // bP
+selectCodeEditor("Top_VGA.vhd", 41, 337); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top_VGA.vhd", 6, 163); // bP
+selectCodeEditor("Top_VGA.vhd", 9, 164); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 61, 109); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 58, 248); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 125, 251); // bP
+selectCodeEditor("Top_VGA.vhd", 125, 401); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 134, 401); // bP
+selectCodeEditor("Top_VGA.vhd", 405, 399); // bP
+selectCodeEditor("Top_VGA.vhd", 402, 249); // bP
+selectCodeEditor("Top_VGA.vhd", 169, 351); // bP
+selectCodeEditor("Top_VGA.vhd", 167, 503); // bP
+selectCodeEditor("Top_VGA.vhd", 128, 431); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 137, 430); // bP
+selectCodeEditor("Top_VGA.vhd", 386, 389); // bP
+selectCodeEditor("Top_VGA.vhd", 47, 487); // bP
+selectCodeEditor("Top_VGA.vhd", 43, 490); // bP
+selectCodeEditor("Top_VGA.vhd", 104, 94); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 83, 229); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 95, 386); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 100, 469); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 165, 163); // bP
+selectCodeEditor("Top_VGA.vhd", 170, 316); // bP
+selectCodeEditor("Top_VGA.vhd", 176, 448); // bP
+selectCodeEditor("Top_VGA.vhd", 174, 451); // bP
+selectCodeEditor("Top_VGA.vhd", 200, 480); // bP
+selectCodeEditor("Top_VGA.vhd", 194, 431); // bP
+selectCodeEditor("Top_VGA.vhd", 486, 301); // bP
+selectCodeEditor("Top_VGA.vhd", 489, 147); // bP
+selectCodeEditor("Top_VGA.vhd", 151, 399); // bP
+selectCodeEditor("Top_VGA.vhd", 156, 397); // bP
+selectCodeEditor("Top_VGA.vhd", 156, 397); // bP
+selectCodeEditor("Top_VGA.vhd", 156, 397, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 15 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_VGA.vhd", 161, 315); // bP
+selectCodeEditor("Top_VGA.vhd", 161, 315, false, false, false, false, true); // bP - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 2); // m
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 531, 316); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("pinta_barras.vhd", 26, 314); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 37, 330); // bP
+selectCodeEditor("pinta_barras.vhd", 28, 328, false, true, false, false, false); // bP - Control Key
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 48, 332); // bP
+selectCodeEditor("pinta_barras.vhd", 48, 350); // bP
+selectCodeEditor("pinta_barras.vhd", 51, 362); // bP
+selectCodeEditor("pinta_barras.vhd", 367, 357); // bP
+selectCodeEditor("pinta_barras.vhd", 46, 162); // bP
+selectCodeEditor("pinta_barras.vhd", 46, 162, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 334, 157); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 205, 386); // bP
+selectCodeEditor("Top_VGA.vhd", 207, 427); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("Top_VGA.vhd", 368, 244); // bP
+selectCodeEditor("Top_VGA.vhd", 358, 244); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 25, 262); // bP
+selectCodeEditor("Top_VGA.vhd", 380, 248); // bP
+selectCodeEditor("Top_VGA.vhd", 492, 301); // bP
+selectCodeEditor("Top_VGA.vhd", 373, 296); // bP
+selectCodeEditor("Top_VGA.vhd", 396, 307); // bP
+selectCodeEditor("Top_VGA.vhd", 86, 258); // bP
+selectCodeEditor("Top_VGA.vhd", 86, 258, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 85, 247); // bP
+selectCodeEditor("Top_VGA.vhd", 85, 247, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 90, 318); // bP
+selectCodeEditor("Top_VGA.vhd", 90, 318, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("Top_VGA.vhd", 142, 389); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 171, 386); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 89, 402); // bP
+selectCodeEditor("Top_VGA.vhd", 88, 416); // bP
+selectCodeEditor("Top_VGA.vhd", 88, 434); // bP
+selectCodeEditor("Top_VGA.vhd", 97, 400, false, true, false, false, false); // bP - Control Key
+typeControlKey((HResource) null, "Top_VGA.vhd", 'c'); // bP
+selectCodeEditor("Top_VGA.vhd", 138, 401); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("Top_VGA.vhd", 168, 416); // bP
+selectCodeEditor("Top_VGA.vhd", 139, 398, false, true, false, false, false); // bP - Control Key
+typeControlKey((HResource) null, "Top_VGA.vhd", 'v'); // bP
+selectCodeEditor("Top_VGA.vhd", 225, 427); // bP
+selectCodeEditor("Top_VGA.vhd", 467, 494); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_VGA.vhd", 104, 381); // bP
+selectCodeEditor("Top_VGA.vhd", 77, 385); // bP
+selectCodeEditor("Top_VGA.vhd", 77, 385, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 87, 400); // bP
+selectCodeEditor("Top_VGA.vhd", 96, 416); // bP
+selectCodeEditor("Top_VGA.vhd", 96, 416, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 92, 430); // bP
+selectCodeEditor("Top_VGA.vhd", 92, 430, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 94, 401); // bP
+selectCodeEditor("Top_VGA.vhd", 94, 401, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_VGA.vhd", 121, 381); // bP
+selectCodeEditor("Top_VGA.vhd", 121, 381, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 124, 395); // bP
+selectCodeEditor("Top_VGA.vhd", 124, 395, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 124, 410); // bP
+selectCodeEditor("Top_VGA.vhd", 125, 410, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 132, 436); // bP
+selectCodeEditor("Top_VGA.vhd", 132, 436, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 2); // m
+selectCodeEditor("pinta_barras.vhd", 323, 283); // bP
+selectCodeEditor("pinta_barras.vhd", 109, 215); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("pinta_barras.vhd", 123, 212); // bP
+selectCodeEditor("pinta_barras.vhd", 161, 246); // bP
+// Elapsed time: 31 seconds
+selectCodeEditor("pinta_barras.vhd", 132, 216); // bP
+selectCodeEditor("pinta_barras.vhd", 25, 126); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 124, 211); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 192, 314); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 128, 215); // bP
+selectCodeEditor("pinta_barras.vhd", 167, 314); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 125, 212); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+// Elapsed time: 28 seconds
+selectCodeEditor("pinta_barras.vhd", 148, 210); // bP
+selectCodeEditor("pinta_barras.vhd", 148, 250); // bP
+selectCodeEditor("pinta_barras.vhd", 126, 211); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 158, 247); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 172, 244); // bP
+selectCodeEditor("pinta_barras.vhd", 155, 279); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 176, 280); // bP
+selectCodeEditor("pinta_barras.vhd", 177, 248); // bP
+selectCodeEditor("pinta_barras.vhd", 175, 281); // bP
+selectCodeEditor("pinta_barras.vhd", 153, 216); // bP
+selectCodeEditor("pinta_barras.vhd", 175, 252); // bP
+selectCodeEditor("pinta_barras.vhd", 109, 294); // bP
+selectCodeEditor("pinta_barras.vhd", 101, 333); // bP
+selectCodeEditor("pinta_barras.vhd", 102, 331); // bP
+selectCodeEditor("pinta_barras.vhd", 245, 334); // bP
+selectCodeEditor("pinta_barras.vhd", 236, 345); // bP
+selectCodeEditor("pinta_barras.vhd", 185, 329); // bP
+selectCodeEditor("pinta_barras.vhd", 236, 328, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 165, 229); // bP
+// Elapsed time: 49 seconds
+selectCodeEditor("pinta_barras.vhd", 284, 333); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 121, 232); // bP
+selectCodeEditor("pinta_barras.vhd", 147, 236); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 274, 224); // bP
+selectCodeEditor("pinta_barras.vhd", 274, 347); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 126, 265); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 277, 265); // bP
+selectCodeEditor("pinta_barras.vhd", 280, 366); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 124, 299); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 272, 301); // bP
+selectCodeEditor("pinta_barras.vhd", 332, 311); // bP
+selectCodeEditor("pinta_barras.vhd", 294, 378); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 308, 403); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 111, 314); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 2); // m
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5803 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5689 ms. Increasing delay to 9000 ms.
+// Elapsed time: 393 seconds
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "report_webtalk ;  ;  ; Sat Nov 30 12:29:57 CET 2024 ; 38599", 38, "38599", 4, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "report_webtalk ;  ;  ; Sat Nov 30 12:29:57 CET 2024 ; 38599", 38, "report_webtalk", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "report_webtalk ;  ;  ; Sat Nov 30 12:29:57 CET 2024 ; 38599", 38, "report_webtalk", 0, false); // O
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near process. [R:/Desktop/SED2/VGA/pinta_barras.vhd:190]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;R:\Desktop\SED2\VGA\pinta_barras.vhd;-;;-;16;-;line;-;190;-;;-;16;-;"); // ah
+selectCodeEditor("pinta_barras.vhd", 63, 237); // bP
+selectCodeEditor("pinta_barras.vhd", 63, 237, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 19, 436); // bP
+selectCodeEditor("pinta_barras.vhd", 85, 436); // bP
+selectCodeEditor("pinta_barras.vhd", 85, 436, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 138, 341); // bP
+selectCodeEditor("pinta_barras.vhd", 78, 198); // bP
+selectCodeEditor("pinta_barras.vhd", 89, 422); // bP
+selectCodeEditor("pinta_barras.vhd", 99, 443); // bP
+selectCodeEditor("pinta_barras.vhd", 42, 409); // bP
+selectCodeEditor("pinta_barras.vhd", 99, 438); // bP
+selectCodeEditor("pinta_barras.vhd", 100, 435, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 52, 398); // bP
+selectCodeEditor("pinta_barras.vhd", 99, 194); // bP
+selectCodeEditor("pinta_barras.vhd", 122, 235); // bP
+selectCodeEditor("pinta_barras.vhd", 102, 263); // bP
+selectCodeEditor("pinta_barras.vhd", 122, 292); // bP
+selectCodeEditor("pinta_barras.vhd", 123, 333); // bP
+selectCodeEditor("pinta_barras.vhd", 96, 337); // bP
+selectCodeEditor("pinta_barras.vhd", 120, 366); // bP
+selectCodeEditor("pinta_barras.vhd", 90, 333); // bP
+selectCodeEditor("pinta_barras.vhd", 67, 419); // bP
+selectCodeEditor("pinta_barras.vhd", 84, 421); // bP
+selectCodeEditor("pinta_barras.vhd", 84, 421, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 34, 402); // bP
+selectCodeEditor("pinta_barras.vhd", 75, 232); // bP
+selectCodeEditor("pinta_barras.vhd", 87, 144); // bP
+selectCodeEditor("pinta_barras.vhd", 288, 325); // bP
+selectCodeEditor("pinta_barras.vhd", 110, 346); // bP
+selectCodeEditor("pinta_barras.vhd", 287, 329); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2010.047 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 49 seconds
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Nov 30 13:17:43 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 13:17:44 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RotacionPSJ(Behavioral) (RotacionPSJ.vhd)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RotacionPSJ(Behavioral) (RotacionPSJ.vhd)]", 15, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 54 seconds
+selectCodeEditor("RotacionPSJ.vhd", 190, 196); // bP
+selectCodeEditor("RotacionPSJ.vhd", 78, 228); // bP
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd), CELDAPACMAN : PosicionPACman(Behavioral) (PosicionPACman.vhd)]", 6, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_VGA(Behavioral) (Top_VGA.vhd), CELDAPACMAN : PosicionPACman(Behavioral) (PosicionPACman.vhd)]", 6, true, false, false, false, false, true); // D - Double Click - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 613ms to process. Increasing delay to 4000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 78 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RotacionPSJ.vhd", 6); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 4); // m
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 3); // m
+selectCodeEditor("Top_VGA.vhd", 309, 280); // bP
+selectCodeEditor("Top_VGA.vhd", 27, 288); // bP
+selectCodeEditor("Top_VGA.vhd", 27, 291); // bP
+selectCodeEditor("Top_VGA.vhd", 314, 280); // bP
+selectCodeEditor("Top_VGA.vhd", 197, 280); // bP
+selectCodeEditor("Top_VGA.vhd", 161, 283); // bP
+selectCodeEditor("Top_VGA.vhd", 195, 285); // bP
+selectCodeEditor("Top_VGA.vhd", 195, 285, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 3); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectCodeEditor("pinta_barras.vhd", 55, 178); // bP
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 2); // m
+// Elapsed time: 152 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 3); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 112 MB. Current time: 11/30/24, 1:24:51 PM CET
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 288, 402); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 314, 262); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 251, 279); // bP
+selectCodeEditor("pinta_barras.vhd", 113, 297); // bP
+selectCodeEditor("pinta_barras.vhd", 308, 332); // bP
+selectCodeEditor("pinta_barras.vhd", 280, 431); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 309, 336); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 112, 330, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 277, 350); // bP
+selectCodeEditor("pinta_barras.vhd", 280, 347); // bP
+selectCodeEditor("pinta_barras.vhd", 321, 350); // bP
+selectCodeEditor("pinta_barras.vhd", 278, 449); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 139, 398); // bP
+selectCodeEditor("pinta_barras.vhd", 10, 393); // bP
+selectCodeEditor("pinta_barras.vhd", 1, 396); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 108, 397, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 108, 397, false, true, false, false, true); // bP - Control Key - Double Click
+selectCodeEditor("pinta_barras.vhd", 109, 413, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 109, 413, false, true, false, false, true); // bP - Control Key - Double Click
+selectCodeEditor("pinta_barras.vhd", 111, 463, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 133, 402); // bP
+selectCodeEditor("pinta_barras.vhd", 108, 465); // bP
+selectCodeEditor("pinta_barras.vhd", 111, 462, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 393, 451); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+selectCodeEditor("pinta_barras.vhd", 651, 372); // bP
+selectCodeEditor("pinta_barras.vhd", 315, 92); // bP
+selectCodeEditor("pinta_barras.vhd", 314, 84); // bP
+selectCodeEditor("pinta_barras.vhd", 321, 89); // bP
+selectCodeEditor("pinta_barras.vhd", 321, 89, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 317, 415); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 313, 160); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 309, 436); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 280, 402); // bP
+selectCodeEditor("pinta_barras.vhd", 296, 402); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 320, 384); // bP
+selectCodeEditor("pinta_barras.vhd", 274, 380); // bP
+selectCodeEditor("pinta_barras.vhd", 317, 256); // bP
+selectCodeEditor("pinta_barras.vhd", 315, 128); // bP
+selectCodeEditor("pinta_barras.vhd", 332, 129); // bP
+selectCodeEditor("pinta_barras.vhd", 332, 129, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 321, 455); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey(null, null, 'z');
+// Elapsed time: 18 seconds
+selectCodeEditor("pinta_barras.vhd", 112, 452, false, true, false, false, false); // bP - Control Key
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1050 ms.
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// PAPropertyPanels.initPanels (Top_VGA.vhd) elapsed time: 0.2s
+// A (cr): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// 'cA' command handler elapsed time: 7 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 2); // m
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+selectCodeEditor("Top_VGA.vhd", 331, 280); // bP
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2013.918 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+dismissDialog("Resetting Runs"); // bz
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cD
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 13:27:35 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 13:27:36 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2013.918 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 818ms to process. Increasing delay to 5000 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4434 ms. Increasing delay to 13302 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 555 ms. Decreasing delay to 2555 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 900 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 11143 ms. Increasing delay to 33429 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10864 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1920 ms. Decreasing delay to 3920 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1051 ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  5200 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10609 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 11207 ms. Increasing delay to 33621 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7920 ms. Increasing delay to 10000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9846 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1924 ms. Decreasing delay to 3924 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2528 ms. Increasing delay to 7584 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8887 ms. Increasing delay to 26661 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1669ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1669 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 12937 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1334ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1334 ms.
+// ag (cr): Bitstream Generation Completed: addNotify
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 836 ms. Decreasing delay to 2836 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1796 ms. Increasing delay to 5388 ms.
+// Elapsed time: 390 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 109 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 3); // m
+// Elapsed time: 13 seconds
+selectCodeEditor("pinta_barras.vhd", 129, 126); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pinta_barras.vhd", 173, 228); // bP
+selectCodeEditor("pinta_barras.vhd", 292, 232); // bP
+// Elapsed time: 45 seconds
+selectCodeEditor("pinta_barras.vhd", 89, 178); // bP
+selectCodeEditor("pinta_barras.vhd", 118, 147); // bP
+selectCodeEditor("pinta_barras.vhd", 67, 129); // bP
+selectCodeEditor("pinta_barras.vhd", 67, 129, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 90, 162); // bP
+selectCodeEditor("pinta_barras.vhd", 90, 112); // bP
+selectCodeEditor("pinta_barras.vhd", 90, 112, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("pinta_barras.vhd", 123, 344); // bP
+selectCodeEditor("pinta_barras.vhd", 122, 345, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("pinta_barras.vhd", 67, 213); // bP
+selectCodeEditor("pinta_barras.vhd", 90, 212); // bP
+selectCodeEditor("pinta_barras.vhd", 84, 182); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 110, 363); // bP
+selectCodeEditor("pinta_barras.vhd", 82, 343); // bP
+selectCodeEditor("pinta_barras.vhd", 438, 335); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("pinta_barras.vhd", 150, 333); // bP
+selectCodeEditor("pinta_barras.vhd", 150, 333, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 171, 352); // bP
+selectCodeEditor("pinta_barras.vhd", 173, 383); // bP
+selectCodeEditor("pinta_barras.vhd", 313, 434); // bP
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_VGA.vhd", 2); // m
+selectCodeEditor("Top_VGA.vhd", 237, 297); // bP
+selectCodeEditor("Top_VGA.vhd", 237, 297, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 240, 290); // bP
+selectCodeEditor("Top_VGA.vhd", 245, 294); // bP
+selectCodeEditor("Top_VGA.vhd", 245, 294, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 159, 366); // bP
+selectCodeEditor("Top_VGA.vhd", 159, 366, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 260, 353); // bP
+selectCodeEditor("Top_VGA.vhd", 260, 353, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 161, 415); // bP
+selectCodeEditor("Top_VGA.vhd", 161, 415, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 252, 383); // bP
+selectCodeEditor("Top_VGA.vhd", 252, 383, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 164, 449); // bP
+selectCodeEditor("Top_VGA.vhd", 164, 449, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("Top_VGA.vhd", 92, 302); // bP
+selectCodeEditor("Top_VGA.vhd", 99, 316); // bP
+selectCodeEditor("Top_VGA.vhd", 142, 316); // bP
+selectCodeEditor("Top_VGA.vhd", 151, 328); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pinta_barras.vhd", 3); // m
+// Elapsed time: 40 seconds
+selectCodeEditor("pinta_barras.vhd", 361, 130); // bP
+// Elapsed time: 99 seconds
+selectCodeEditor("pinta_barras.vhd", 227, 462); // bP
+// Elapsed time: 30 seconds
+selectCodeEditor("pinta_barras.vhd", 7, 187); // bP
+selectCodeEditor("pinta_barras.vhd", 7, 187, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 177, 463); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 9, 38); // bP
+selectCodeEditor("pinta_barras.vhd", 9, 43, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 202, 281); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 102, 185); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("pinta_barras.vhd", 220, 231); // bP
+selectCodeEditor("pinta_barras.vhd", 95, 280); // bP
+selectCodeEditor("pinta_barras.vhd", 79, 167); // bP
+selectCodeEditor("pinta_barras.vhd", 118, 124); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 99, 113); // bP
+selectCodeEditor("pinta_barras.vhd", 103, 162); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 21, 179, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 24 seconds
+selectCodeEditor("pinta_barras.vhd", 100, 365); // bP
+selectCodeEditor("pinta_barras.vhd", 400, 411); // bP
+selectCodeEditor("pinta_barras.vhd", 190, 369); // bP
+selectCodeEditor("pinta_barras.vhd", 120, 126); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 126, 291); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 22, 214, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 62, 328); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 53, 141); // bP
+selectCodeEditor("pinta_barras.vhd", 44, 146); // bP
+selectCodeEditor("pinta_barras.vhd", 98, 126); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 104, 130); // bP
+selectCodeEditor("pinta_barras.vhd", 90, 127); // bP
+selectCodeEditor("pinta_barras.vhd", 0, 124); // bP
+selectCodeEditor("pinta_barras.vhd", 18, 151); // bP
+selectCodeEditor("pinta_barras.vhd", 18, 354); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 43, 244); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 37 seconds
+selectCodeEditor("pinta_barras.vhd", 303, 476); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("pinta_barras.vhd", 392, 372); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("pinta_barras.vhd", 175, 450); // bP
+selectCodeEditor("pinta_barras.vhd", 157, 213, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
+// Elapsed time: 14 seconds
+selectCodeEditor("pinta_barras.vhd", 311, 319); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 307, 168); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 196, 176); // bP
+selectCodeEditor("pinta_barras.vhd", 100, 470); // bP
+selectCodeEditor("pinta_barras.vhd", 88, 447); // bP
+selectCodeEditor("pinta_barras.vhd", 84, 448); // bP
+selectCodeEditor("pinta_barras.vhd", 79, 382); // bP
+selectCodeEditor("pinta_barras.vhd", 82, 315); // bP
+selectCodeEditor("pinta_barras.vhd", 172, 452); // bP
+// Elapsed time: 55 seconds
+selectCodeEditor("pinta_barras.vhd", 109, 142, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 94, 126); // bP
+selectCodeEditor("pinta_barras.vhd", 109, 304, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 109, 304); // bP
+selectCodeEditor("pinta_barras.vhd", 116, 127); // bP
+selectCodeEditor("pinta_barras.vhd", 136, 140, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 137, 262); // bP
+selectCodeEditor("pinta_barras.vhd", 106, 468); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("pinta_barras.vhd", 83, 467); // bP
+// Elapsed time: 42 seconds
+selectCodeEditor("pinta_barras.vhd", 105, 464); // bP
+selectCodeEditor("pinta_barras.vhd", 162, 459); // bP
+selectCodeEditor("pinta_barras.vhd", 162, 459, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 91, 159); // bP
+selectCodeEditor("pinta_barras.vhd", 204, 467); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("pinta_barras.vhd", 111, 297); // bP
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2013.918 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 10 seconds
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 13:51:43 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 13:51:43 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2013.918 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz
+selectCodeEditor("pinta_barras.vhd", 134, 277); // bP
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 115 MB. Current time: 11/30/24, 1:54:52 PM CET
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 243 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 207 seconds
+selectCodeEditor("pinta_barras.vhd", 139, 332); // bP
+selectCodeEditor("pinta_barras.vhd", 167, 323); // bP
+selectCodeEditor("pinta_barras.vhd", 308, 79); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 147, 377); // bP
+selectCodeEditor("pinta_barras.vhd", 135, 378); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 265, 379); // bP
+selectCodeEditor("pinta_barras.vhd", 164, 381); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 13, 142); // bP
+selectCodeEditor("pinta_barras.vhd", 9, 144); // bP
+selectCodeEditor("pinta_barras.vhd", 2, 146); // bP
+selectCodeEditor("pinta_barras.vhd", 2, 146, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 3, 146); // bP
+selectCodeEditor("pinta_barras.vhd", 4, 145, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 609, 321); // bP
+selectCodeEditor("pinta_barras.vhd", 57, 110); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("pinta_barras.vhd", 23, 260, false, true, false, false, false); // bP - Control Key
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 21, 478); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2020.887 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 11 seconds
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 14:00:47 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 14:00:47 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 58 seconds
+selectCodeEditor("pinta_barras.vhd", 82, 265); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("pinta_barras.vhd", 104, 363, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 112, 414, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 168, 304); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 51 seconds
+selectCodeEditor("pinta_barras.vhd", 84, 253); // bP
+// Elapsed time: 33 seconds
+selectCodeEditor("pinta_barras.vhd", 44, 467); // bP
+selectCodeEditor("pinta_barras.vhd", 44, 467, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 37 seconds
+selectCodeEditor("pinta_barras.vhd", 51, 133); // bP
+selectCodeEditor("pinta_barras.vhd", 6, 144); // bP
+selectCodeEditor("pinta_barras.vhd", 1, 144); // bP
+selectCodeEditor("pinta_barras.vhd", 1, 144, false, true, false, false, true); // bP - Control Key - Double Click
+selectCodeEditor("pinta_barras.vhd", 19, 145); // bP
+selectCodeEditor("pinta_barras.vhd", 6, 148); // bP
+selectCodeEditor("pinta_barras.vhd", 53, 222); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// aH (cr): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a
+dismissDialog("Feedback Request"); // aH
+selectButton("OptionPane.button", "OK"); // JButton
+selectCodeEditor("pinta_barras.vhd", 3, 222, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 29 seconds
+selectCodeEditor("pinta_barras.vhd", 128, 286); // bP
+selectCodeEditor("pinta_barras.vhd", 224, 296, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 150, 330); // bP
+selectCodeEditor("pinta_barras.vhd", 215, 321); // bP
+selectCodeEditor("pinta_barras.vhd", 2, 284); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 244, 333); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("pinta_barras.vhd", 218, 347, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 41 seconds
+selectCodeEditor("pinta_barras.vhd", 222, 204); // bP
+selectCodeEditor("pinta_barras.vhd", 279, 239); // bP
+selectCodeEditor("pinta_barras.vhd", 108, 231); // bP
+selectCodeEditor("pinta_barras.vhd", 37, 225); // bP
+selectCodeEditor("pinta_barras.vhd", 563, 227); // bP
+// Elapsed time: 21 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 284, 262); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 319, 282); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 572, 279); // bP
+selectCodeEditor("pinta_barras.vhd", 573, 330); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("pinta_barras.vhd", 606, 339); // bP
+selectCodeEditor("pinta_barras.vhd", 612, 355); // bP
+selectCodeEditor("pinta_barras.vhd", 590, 334); // bP
+selectCodeEditor("pinta_barras.vhd", 475, 406); // bP
+selectCodeEditor("pinta_barras.vhd", 647, 335); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 573, 347); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("pinta_barras.vhd", 359, 384); // bP
+selectCodeEditor("pinta_barras.vhd", 315, 383); // bP
+selectCodeEditor("pinta_barras.vhd", 475, 336); // bP
+// Elapsed time: 239 seconds
+selectCodeEditor("pinta_barras.vhd", 421, 297); // bP
+selectCodeEditor("pinta_barras.vhd", 413, 316); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("pinta_barras.vhd", 456, 297); // bP
+selectCodeEditor("pinta_barras.vhd", 421, 295); // bP
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2020.887 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 10 seconds
+dismissDialog("Launch Runs"); // cD
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 14:14:21 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 14:14:21 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 362 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 209 seconds
+selectCodeEditor("pinta_barras.vhd", 612, 229); // bP
+selectCodeEditor("pinta_barras.vhd", 489, 253); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 118 MB. Current time: 11/30/24, 2:24:52 PM CET
+// Elapsed time: 127 seconds
+selectCodeEditor("pinta_barras.vhd", 283, 299); // bP
+selectCodeEditor("pinta_barras.vhd", 283, 226); // bP
+selectCodeEditor("pinta_barras.vhd", 575, 289); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 201, 176); // bP
+selectCodeEditor("pinta_barras.vhd", 203, 175, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 167, 267); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 76 seconds
+selectCodeEditor("pinta_barras.vhd", 109, 146); // bP
+selectCodeEditor("pinta_barras.vhd", 97, 210); // bP
+selectCodeEditor("pinta_barras.vhd", 435, 213); // bP
+selectCodeEditor("pinta_barras.vhd", 438, 280); // bP
+selectCodeEditor("pinta_barras.vhd", 465, 279); // bP
+selectCodeEditor("pinta_barras.vhd", 369, 148); // bP
+selectCodeEditor("pinta_barras.vhd", 390, 218); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 273, 150); // bP
+selectCodeEditor("pinta_barras.vhd", 249, 211); // bP
+selectCodeEditor("pinta_barras.vhd", 219, 275); // bP
+selectCodeEditor("pinta_barras.vhd", 474, 282); // bP
+selectCodeEditor("pinta_barras.vhd", 321, 399); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("pinta_barras.vhd", 328, 392); // bP
+selectCodeEditor("pinta_barras.vhd", 365, 400); // bP
+selectCodeEditor("pinta_barras.vhd", 356, 392); // bP
+// Elapsed time: 84 seconds
+selectCodeEditor("pinta_barras.vhd", 132, 264); // bP
+selectCodeEditor("pinta_barras.vhd", 133, 331); // bP
+selectCodeEditor("pinta_barras.vhd", 171, 467); // bP
+selectCodeEditor("pinta_barras.vhd", 90, 415); // bP
+selectCodeEditor("pinta_barras.vhd", 327, 246); // bP
+selectCodeEditor("pinta_barras.vhd", 344, 247); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("pinta_barras.vhd", 134, 163); // bP
+selectCodeEditor("pinta_barras.vhd", 232, 178); // bP
+// Elapsed time: 1019 seconds
+selectCodeEditor("pinta_barras.vhd", 332, 299); // bP
+// Elapsed time: 96 seconds
+selectCodeEditor("pinta_barras.vhd", 52, 159); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 46, 182); // bP
+// Elapsed time: 202 seconds
+selectCodeEditor("pinta_barras.vhd", 410, 241); // bP
+selectCodeEditor("pinta_barras.vhd", 110, 216); // bP
+selectCodeEditor("pinta_barras.vhd", 316, 263); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("pinta_barras.vhd", 148, 251); // bP
+selectCodeEditor("pinta_barras.vhd", 318, 233); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 149, 255); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 269, 267); // bP
+selectCodeEditor("pinta_barras.vhd", 276, 266); // bP
+selectCodeEditor("pinta_barras.vhd", 277, 266); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 117 MB. Current time: 11/30/24, 2:54:52 PM CET
+// Elapsed time: 371 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 344, 361); // bP
+selectCodeEditor("pinta_barras.vhd", 328, 330); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 161, 366); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 271, 366); // bP
+selectCodeEditor("pinta_barras.vhd", 330, 361); // bP
+selectCodeEditor("pinta_barras.vhd", 149, 347); // bP
+selectCodeEditor("pinta_barras.vhd", 304, 358); // bP
+selectCodeEditor("pinta_barras.vhd", 13, 283, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 12 seconds
+selectCodeEditor("pinta_barras.vhd", 97, 243, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 95, 247, false, true, false, false, false); // bP - Control Key
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 130, 228); // bP
+selectCodeEditor("pinta_barras.vhd", 415, 254); // bP
+selectCodeEditor("pinta_barras.vhd", 422, 261); // bP
+selectCodeEditor("pinta_barras.vhd", 127, 318); // bP
+selectCodeEditor("pinta_barras.vhd", 125, 318); // bP
+selectCodeEditor("pinta_barras.vhd", 153, 281); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pinta_barras.vhd", 303, 326); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 235, 328); // bP
+selectCodeEditor("pinta_barras.vhd", 134, 314); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 306, 352); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 270, 347); // bP
+selectCodeEditor("pinta_barras.vhd", 375, 349); // bP
+selectCodeEditor("pinta_barras.vhd", 187, 359); // bP
+selectCodeEditor("pinta_barras.vhd", 306, 435); // bP
+selectCodeEditor("pinta_barras.vhd", 308, 419); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 104, 436); // bP
+selectCodeEditor("pinta_barras.vhd", 153, 375); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 279, 456); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 96, 466); // bP
+selectCodeEditor("pinta_barras.vhd", 154, 495); // bP
+selectCodeEditor("pinta_barras.vhd", 91, 467); // bP
+selectCodeEditor("pinta_barras.vhd", 86, 468); // bP
+selectCodeEditor("pinta_barras.vhd", 94, 468); // bP
+selectCodeEditor("pinta_barras.vhd", 90, 467); // bP
+selectCodeEditor("pinta_barras.vhd", 168, 449); // bP
+selectCodeEditor("pinta_barras.vhd", 378, 473); // bP
+selectCodeEditor("pinta_barras.vhd", 104, 494); // bP
+selectCodeEditor("pinta_barras.vhd", 81, 492); // bP
+selectCodeEditor("pinta_barras.vhd", 44, 500); // bP
+selectCodeEditor("pinta_barras.vhd", 87, 216); // bP
+selectCodeEditor("pinta_barras.vhd", 334, 267); // bP
+selectCodeEditor("pinta_barras.vhd", 94, 302); // bP
+selectCodeEditor("pinta_barras.vhd", 148, 378); // bP
+selectCodeEditor("pinta_barras.vhd", 37, 381); // bP
+selectCodeEditor("pinta_barras.vhd", 163, 283); // bP
+selectCodeEditor("pinta_barras.vhd", 104, 451); // bP
+selectCodeEditor("pinta_barras.vhd", 198, 442); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 97, 127); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pinta_barras.vhd", 151, 435); // bP
+selectCodeEditor("pinta_barras.vhd", 188, 146); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("pinta_barras.vhd", 131, 177); // bP
+selectCodeEditor("pinta_barras.vhd", 129, 163); // bP
+selectCodeEditor("pinta_barras.vhd", 95, 243); // bP
+selectCodeEditor("pinta_barras.vhd", 123, 116); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 94, 376); // bP
+selectCodeEditor("pinta_barras.vhd", 101, 377); // bP
+selectCodeEditor("pinta_barras.vhd", 107, 347); // bP
+selectCodeEditor("pinta_barras.vhd", 94, 312); // bP
+selectCodeEditor("pinta_barras.vhd", 95, 280); // bP
+selectCodeEditor("pinta_barras.vhd", 112, 246); // bP
+selectCodeEditor("pinta_barras.vhd", 94, 212); // bP
+selectCodeEditor("pinta_barras.vhd", 97, 181); // bP
+selectCodeEditor("pinta_barras.vhd", 110, 147); // bP
+selectCodeEditor("pinta_barras.vhd", 112, 113); // bP
+selectCodeEditor("pinta_barras.vhd", 113, 114, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 137, 96); // bP
+selectCodeEditor("pinta_barras.vhd", 126, 70); // bP
+selectCodeEditor("pinta_barras.vhd", 132, 144); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 130, 63); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 387, 246); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 416, 55); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 141, 348); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 668, 73); // bP
+selectCodeEditor("pinta_barras.vhd", 668, 58); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 350, 58); // bP
+selectCodeEditor("pinta_barras.vhd", 629, 62); // bP
+selectCodeEditor("pinta_barras.vhd", 910, 66); // bP
+selectCodeEditor("pinta_barras.vhd", 172, 88); // bP
+selectCodeEditor("pinta_barras.vhd", 24, 92); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 118, 107); // bP
+selectCodeEditor("pinta_barras.vhd", 7, 111); // bP
+selectCodeEditor("pinta_barras.vhd", 37, 84); // bP
+selectCodeEditor("pinta_barras.vhd", 17, 82); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 44, 383); // bP
+selectCodeEditor("pinta_barras.vhd", 10, 386); // bP
+selectCodeEditor("pinta_barras.vhd", 1, 384); // bP
+selectCodeEditor("pinta_barras.vhd", 81, 352); // bP
+selectCodeEditor("pinta_barras.vhd", 0, 349); // bP
+// Elapsed time: 57 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2022.570 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 11 seconds
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 15:06:37 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 15:06:37 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2022.570 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 107 seconds
+selectCodeEditor("pinta_barras.vhd", 91, 109); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1057 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2885 ms. Increasing delay to 8655 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7485 ms. Increasing delay to 10000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 180 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 101 seconds
+selectCodeEditor("pinta_barras.vhd", 131, 122); // bP
+selectCodeEditor("pinta_barras.vhd", 131, 122, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("pinta_barras.vhd", 67, 164); // bP
+selectCodeEditor("pinta_barras.vhd", 472, 161, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
+selectCodeEditor("pinta_barras.vhd", 966, 153); // bP
+selectCodeEditor("pinta_barras.vhd", 966, 141); // bP
+// Elapsed time: 53 seconds
+selectCodeEditor("pinta_barras.vhd", 108, 157, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ak
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2022.570 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 18 seconds
+dismissDialog("Launch Runs"); // cD
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bz (cr):  Generate Bitstream : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 15:15:32 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 15:15:32 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2022.570 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 7, 110); // bP
+selectCodeEditor("pinta_barras.vhd", 2, 112); // bP
+selectCodeEditor("pinta_barras.vhd", 58, 173); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pinta_barras.vhd", 17, 224); // bP
+selectCodeEditor("pinta_barras.vhd", 6, 273); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("pinta_barras.vhd", 608, 235); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 102, 176); // bP
+selectCodeEditor("pinta_barras.vhd", 42, 195); // bP
+selectCodeEditor("pinta_barras.vhd", 92, 160); // bP
+selectCodeEditor("pinta_barras.vhd", 353, 160, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
+selectCodeEditor("pinta_barras.vhd", 190, 322); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 105, 332); // bP
+selectCodeEditor("pinta_barras.vhd", 100, 347, false, true, false, false, false); // bP - Control Key
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 87, 210); // bP
+selectCodeEditor("pinta_barras.vhd", 63, 103); // bP
+selectCodeEditor("pinta_barras.vhd", 996, 286); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("pinta_barras.vhd", 135, 330); // bP
+selectCodeEditor("pinta_barras.vhd", 235, 328, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ak
+selectCodeEditor("pinta_barras.vhd", 147, 140); // bP
+selectCodeEditor("pinta_barras.vhd", 122, 160); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 115, 451); // bP
+selectCodeEditor("pinta_barras.vhd", 98, 157); // bP
+selectCodeEditor("pinta_barras.vhd", 146, 161); // bP
+selectCodeEditor("pinta_barras.vhd", 151, 232); // bP
+selectCodeEditor("pinta_barras.vhd", 161, 233); // bP
+selectCodeEditor("pinta_barras.vhd", 158, 300); // bP
+selectCodeEditor("pinta_barras.vhd", 345, 421); // bP
+selectCodeEditor("pinta_barras.vhd", 344, 285); // bP
+selectCodeEditor("pinta_barras.vhd", 349, 210); // bP
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("pinta_barras.vhd", 355, 217); // bP
+selectCodeEditor("pinta_barras.vhd", 352, 274); // bP
+selectCodeEditor("pinta_barras.vhd", 367, 246); // bP
+selectCodeEditor("pinta_barras.vhd", 368, 333); // bP
+selectCodeEditor("pinta_barras.vhd", 332, 318); // bP
+selectCodeEditor("pinta_barras.vhd", 352, 331); // bP
+selectCodeEditor("pinta_barras.vhd", 366, 364); // bP
+selectCodeEditor("pinta_barras.vhd", 384, 344); // bP
+selectCodeEditor("pinta_barras.vhd", 148, 351); // bP
+selectCodeEditor("pinta_barras.vhd", 163, 279); // bP
+selectCodeEditor("pinta_barras.vhd", 149, 248); // bP
+selectCodeEditor("pinta_barras.vhd", 147, 199); // bP
+selectCodeEditor("pinta_barras.vhd", 124, 91); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 345, 433); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 188, 467); // bP
+selectCodeEditor("pinta_barras.vhd", 138, 467); // bP
+selectCodeEditor("pinta_barras.vhd", 341, 416); // bP
+selectCodeEditor("pinta_barras.vhd", 335, 368); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  1005 ms.
+selectCodeEditor("pinta_barras.vhd", 6, 430); // bP
+selectCodeEditor("pinta_barras.vhd", 19, 431); // bP
+selectCodeEditor("pinta_barras.vhd", 32, 430); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+// TclEventType: RUN_STEP_COMPLETED
+selectCodeEditor("pinta_barras.vhd", 196, 431); // bP
+selectCodeEditor("pinta_barras.vhd", 187, 452); // bP
+selectCodeEditor("pinta_barras.vhd", 472, 445); // bP
+selectCodeEditor("pinta_barras.vhd", 340, 401); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 363, 418); // bP
+selectCodeEditor("pinta_barras.vhd", 220, 433); // bP
+selectCodeEditor("pinta_barras.vhd", 323, 484); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("pinta_barras.vhd", 188, 245); // bP
+selectCodeEditor("pinta_barras.vhd", 214, 278); // bP
+selectCodeEditor("pinta_barras.vhd", 190, 326, false, true, false, false, false); // bP - Control Key
+selectCodeEditor("pinta_barras.vhd", 446, 340); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("pinta_barras.vhd", 976, 179); // bP
+selectCodeEditor("pinta_barras.vhd", 922, 193); // bP
+selectCodeEditor("pinta_barras.vhd", 974, 175); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 31 seconds
+selectCodeEditor("pinta_barras.vhd", 35, 243); // bP
+selectCodeEditor("pinta_barras.vhd", 41, 245); // bP
+selectCodeEditor("pinta_barras.vhd", 33, 239); // bP
+selectCodeEditor("pinta_barras.vhd", 50, 248); // bP
+selectCodeEditor("pinta_barras.vhd", 3, 248); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 89, 163); // bP
+selectCodeEditor("pinta_barras.vhd", 98, 170); // bP
+selectCodeEditor("pinta_barras.vhd", 111, 174); // bP
+selectCodeEditor("pinta_barras.vhd", 66, 113); // bP
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2022.570 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 10 seconds
+dismissDialog("Launch Runs"); // cD
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 15:21:46 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 15:21:46 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2022.570 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 121 MB. Current time: 11/30/24, 3:24:53 PM CET
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 251 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 149 seconds
+selectCodeEditor("pinta_barras.vhd", 172, 314); // bP
+selectCodeEditor("pinta_barras.vhd", 76, 266); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 99, 259); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 93, 292); // bP
+selectCodeEditor("pinta_barras.vhd", 98, 296); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 108, 182); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 76, 209); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 13 seconds
+selectCodeEditor("pinta_barras.vhd", 75, 198); // bP
+selectCodeEditor("pinta_barras.vhd", 415, 194, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
+selectCodeEditor("pinta_barras.vhd", 103, 312); // bP
+selectCodeEditor("pinta_barras.vhd", 110, 145); // bP
+selectCodeEditor("pinta_barras.vhd", 109, 176); // bP
+selectCodeEditor("pinta_barras.vhd", 38, 156); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("pinta_barras.vhd", 108, 157); // bP
+selectCodeEditor("pinta_barras.vhd", 104, 157); // bP
+selectCodeEditor("pinta_barras.vhd", 97, 161); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 39, 196); // bP
+selectCodeEditor("pinta_barras.vhd", 63, 169); // bP
+selectCodeEditor("pinta_barras.vhd", 54, 161); // bP
+typeControlKey(null, null, 'z');
+// Elapsed time: 21 seconds
+selectCodeEditor("pinta_barras.vhd", 57, 364); // bP
+selectCodeEditor("pinta_barras.vhd", 57, 364, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 31, 388); // bP
+selectCodeEditor("pinta_barras.vhd", 31, 388, false, false, false, false, true); // bP - Double Click
+// Elapsed time: 65 seconds
+selectCodeEditor("pinta_barras.vhd", 38, 335); // bP
+// Elapsed time: 57 seconds
+selectCodeEditor("pinta_barras.vhd", 105, 461); // bP
+selectCodeEditor("pinta_barras.vhd", 12, 464); // bP
+selectCodeEditor("pinta_barras.vhd", 28, 468); // bP
+selectCodeEditor("pinta_barras.vhd", 78, 196); // bP
+selectCodeEditor("pinta_barras.vhd", 303, 203, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ak
+selectCodeEditor("pinta_barras.vhd", 100, 414); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 34, 382); // bP
+// Elapsed time: 74 seconds
+selectCodeEditor("pinta_barras.vhd", 148, 294); // bP
+// Elapsed time: 106 seconds
+selectCodeEditor("pinta_barras.vhd", 9, 125); // bP
+selectCodeEditor("pinta_barras.vhd", 65, 56); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+selectCodeEditor("pinta_barras.vhd", 136, 276); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'v'); // bP
+selectCodeEditor("pinta_barras.vhd", 210, 176); // bP
+selectCodeEditor("pinta_barras.vhd", 104, 209); // bP
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pinta_barras.vhd", 132, 148); // bP
+selectCodeEditor("pinta_barras.vhd", 77, 146); // bP
+selectCodeEditor("pinta_barras.vhd", 55, 162); // bP
+selectCodeEditor("pinta_barras.vhd", 118, 143); // bP
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 107, 160); // bP
+selectCodeEditor("pinta_barras.vhd", 121, 148); // bP
+selectCodeEditor("pinta_barras.vhd", 84, 179); // bP
+selectCodeEditor("pinta_barras.vhd", 120, 177); // bP
+selectCodeEditor("pinta_barras.vhd", 118, 143); // bP
+selectCodeEditor("pinta_barras.vhd", 116, 158); // bP
+selectCodeEditor("pinta_barras.vhd", 54, 194); // bP
+selectCodeEditor("pinta_barras.vhd", 324, 266); // bP
+// Elapsed time: 23 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2024.336 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+// Elapsed time: 96 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 100 seconds
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Nov 30 15:39:51 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 15:39:51 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2024.336 ; gain = 0.000 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 282 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 134 seconds
+selectCodeEditor("pinta_barras.vhd", 566, 175); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pinta_barras.vhd", 571, 224); // bP
+selectCodeEditor("pinta_barras.vhd", 144, 211); // bP
+// Elapsed time: 85 seconds
+selectCodeEditor("pinta_barras.vhd", 124, 143); // bP
+// Elapsed time: 93 seconds
+selectCodeEditor("pinta_barras.vhd", 338, 162); // bP
+selectCodeEditor("pinta_barras.vhd", 352, 142); // bP
+selectCodeEditor("pinta_barras.vhd", 630, 146); // bP
+selectCodeEditor("pinta_barras.vhd", 910, 143); // bP
+selectCodeEditor("pinta_barras.vhd", 351, 141); // bP
+selectCodeEditor("pinta_barras.vhd", 633, 149); // bP
+selectCodeEditor("pinta_barras.vhd", 916, 139); // bP
+selectCodeEditor("pinta_barras.vhd", 146, 266); // bP
+selectCodeEditor("pinta_barras.vhd", 469, 144); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("pinta_barras.vhd", 114, 143); // bP
+selectCodeEditor("pinta_barras.vhd", 114, 143); // bP
+// Elapsed time: 35 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// 'cA' command handler elapsed time: 6 seconds
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("pinta_barras.vhd", 89, 294); // bP
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2024.336 ; gain = 0.000 
+// cD (cr): Launch Runs: addNotify
+dismissDialog("Resetting Runs"); // bz
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: [Sat Nov 30 15:52:32 2024] Launched synth_1... Run output will be captured here: R:/Desktop/SED2/VGA/impl_1/synth_1/runme.log [Sat Nov 30 15:52:32 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/VGA.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2024.336 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bz
+selectCodeEditor("pinta_barras.vhd", 535, 280); // bP
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("pinta_barras.vhd", 84, 158); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 130 seconds
+selectCodeEditor("pinta_barras.vhd", 16, 261); // bP
+selectCodeEditor("pinta_barras.vhd", 136, 264); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 125 MB. Current time: 11/30/24, 3:54:53 PM CET
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 70 seconds
+selectCodeEditor("pinta_barras.vhd", 143, 248); // bP
+selectCodeEditor("pinta_barras.vhd", 134, 195); // bP
+selectCodeEditor("pinta_barras.vhd", 134, 195, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 153, 474); // bP
+selectCodeEditor("pinta_barras.vhd", 149, 160, false, false, false, true, false); // bP - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ak
+typeControlKey(null, null, 'z');
+selectCodeEditor("pinta_barras.vhd", 41, 234); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("pinta_barras.vhd", 142, 479); // bP
+selectCodeEditor("pinta_barras.vhd", 17, 165); // bP
+selectCodeEditor("pinta_barras.vhd", 172, 487); // bP
+typeControlKey((HResource) null, "pinta_barras.vhd", 'c'); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 228 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectCodeEditor("pinta_barras.vhd", 140, 296); // bP
+// Elapsed time: 39 seconds
+selectCodeEditor("pinta_barras.vhd", 91, 57); // bP
+selectCodeEditor("pinta_barras.vhd", 91, 57, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("pinta_barras.vhd", 17, 67); // bP
+// Elapsed time: 150 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// cD (cr): Launch Runs: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 5 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_RESET
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 30 16:03:52 2024] Launched impl_1... Run output will be captured here: R:/Desktop/SED2/VGA/VGA.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 100 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 155 seconds
+selectCodeEditor("pinta_barras.vhd", 976, 179); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,919 MB. GUI used memory: 128 MB. Current time: 11/30/24, 4:24:53 PM CET
