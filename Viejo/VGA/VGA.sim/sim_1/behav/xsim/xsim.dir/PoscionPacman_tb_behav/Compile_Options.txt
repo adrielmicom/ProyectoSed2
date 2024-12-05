@@ -1,0 +1,1 @@
+-wto "4219326fd14942fca657aaf0bfd74e23" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "PoscionPacman_tb_behav" "xil_defaultlib.PoscionPacman_tb" -log "elaborate.log" 

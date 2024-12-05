@@ -1,0 +1,1 @@
+-wto "4219326fd14942fca657aaf0bfd74e23" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Top_VGA_behav" "xil_defaultlib.Top_VGA" -log "elaborate.log" 

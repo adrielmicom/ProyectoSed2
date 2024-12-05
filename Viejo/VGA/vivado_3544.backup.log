@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec  1 21:55:25 2024
+# Process ID: 3544
+# Current directory: R:/Desktop/SED2/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9196 R:\Desktop\SED2\VGA\VGA.xpr
+# Log file: R:/Desktop/SED2/VGA/vivado.log
+# Journal file: R:/Desktop/SED2/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project R:/Desktop/SED2/VGA/VGA.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'R:/Desktop/SED2/VGA/VGA.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 1088.688 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1088.688 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec  1 22:01:23 2024] Launched synth_1...
+Run output will be captured here: R:/Desktop/SED2/VGA/VGA.runs/synth_1/runme.log
+[Sun Dec  1 22:01:23 2024] Launched impl_1...
+Run output will be captured here: R:/Desktop/SED2/VGA/VGA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.688 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  1 22:11:35 2024...

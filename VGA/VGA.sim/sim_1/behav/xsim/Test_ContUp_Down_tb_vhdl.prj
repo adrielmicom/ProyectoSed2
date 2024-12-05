@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ContadorUp_Down.vhd" \
+"../../../../Test_ContUp_Down_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Mon Dec  2 11:44:05 2024
-| Host             : VD023002 running 64-bit major release  (build 9200)
+| Date             : Thu Dec  5 09:22:51 2024
+| Host             : VD023024 running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_VGA_power_routed.rpt -pb Top_VGA_power_summary_routed.pb -rpx Top_VGA_power_routed.rpx
 | Design           : Top_VGA
 | Device           : xc7z010clg400-1
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      552 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      245 |     17600 |            1.39 |
-|   Register     |    <0.001 |      176 |     35200 |            0.50 |
+| Slice Logic    |    <0.001 |      596 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      272 |     17600 |            1.55 |
+|   Register     |    <0.001 |      184 |     35200 |            0.52 |
 |   CARRY4       |    <0.001 |       12 |      4400 |            0.27 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     17600 |           <0.01 |
-|   Others       |     0.000 |       45 |       --- |             --- |
-| Signals        |    <0.001 |      434 |       --- |             --- |
-| Block RAM      |    <0.001 |      1.5 |        60 |            2.50 |
+|   F7/F8 Muxes  |    <0.001 |       13 |     17600 |            0.07 |
+|   Others       |     0.000 |       47 |       --- |             --- |
+| Signals        |    <0.001 |      463 |       --- |             --- |
+| Block RAM      |    <0.001 |        2 |        60 |            3.33 |
 | PLL            |     0.106 |        1 |         2 |           50.00 |
 | I/O            |     0.132 |       14 |       100 |           14.00 |
 | Static Power   |     0.096 |          |           |                 |

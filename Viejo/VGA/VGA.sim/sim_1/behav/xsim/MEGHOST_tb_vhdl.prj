@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ContadorUp_Down.vhd" \
+"../../../../VGA.srcs/sources_1/new/MEghost.vhd" \
+"../../../../VGA.srcs/sim_1/new/MEGHOST_tb.vhd" \
+
+# Do not sort compile order
+nosort

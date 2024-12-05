@@ -1,7 +1,7 @@
-Running: xsim.dir/MEGHOST_tb_behav/xsimk.exe -simmode gui -wdb MEGHOST_tb_behav.wdb -simrunnum 0 -socket 52281
+Running: xsim.dir/MEGHOST_tb_behav/xsimk.exe -simmode gui -wdb MEGHOST_tb_behav.wdb -simrunnum 0 -socket 59185
 Design successfully loaded
-Design Loading Memory Usage: 6668 KB (Peak: 6668 KB)
-Design Loading CPU Usage: 78 ms
+Design Loading Memory Usage: 6200 KB (Peak: 6200 KB)
+Design Loading CPU Usage: 93 ms
 Simulation completed
-Simulation Memory Usage: 15216 KB (Peak: 15216 KB)
-Simulation CPU Usage: 3889 ms
+Simulation Memory Usage: 14768 KB (Peak: 14768 KB)
+Simulation CPU Usage: 11374 ms
