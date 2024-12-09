@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../ContadorUp_Down.vhd" \
-"../../../../VGA.srcs/sources_1/new/PosicionPACman.vhd" \
-"../../../../VGA.srcs/sim_1/new/PoscionPacman_tb.vhd" \
-
-# Do not sort compile order
-nosort
