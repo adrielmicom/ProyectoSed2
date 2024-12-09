@@ -1,0 +1,2 @@
+Cursando la asignatura de Diseño de Circuitos y Sistemas Electrónicos, se adquieren conocimientos como manejo de memorias, multiplexores, máquinas de estados y contadores, que nos permiten realizar un sistema funcional que interactúe con una pantalla HDMI.
+proyecto para desarrollar un videojuego cuya representación gráfica en pantalla consiste en un circuito de carreras con dos vehículos uno controlado por el usuario y otro denominado fantasma, cuyo movimiento dirige el sistema.
